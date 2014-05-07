@@ -1,0 +1,20 @@
+{
+  "name": "vinnie",
+  "version": "0.0.1",
+  "author": "Cesar Aguiar <cesar@intentu.com>",
+  "description": "A wordpress theme designed for cesaraguiar.me",
+  "keywords": [
+    "wordpress",
+    "theme",
+    "cesaraguiar",
+    "csraguiar",
+    "portfolio"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+  	 "grunt": "~0.4.4",
+    "grunt-contrib-compass": "~0.7.1",
+    "grunt-contrib-uglify": "~0.4.0",
+    "grunt-contrib-watch": "~0.6.1"
+  }
+}

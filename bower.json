@@ -1,0 +1,34 @@
+{
+  "name": "vinnie",
+  "version": "0.0.1",
+  "authors": [
+    "Cesar Aguiar <cesar@intentu.com>"
+  ],
+  "description": "A wordpress theme designed for cesaraguiar.me",
+  "main": "build/css/vinnie.css",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "wordpress",
+    "theme",
+    "cesaraguiar",
+    "csraguiar",
+    "portfolio"
+  ],
+  "license": "MIT",
+  "homepage": "http://cesaraguiar.me",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap-sass-official": "~3.1.1+2",
+    "html5-boilerplate": "~4.3.0",
+    "bourbon": "~4.0.1"
+  }
+}
