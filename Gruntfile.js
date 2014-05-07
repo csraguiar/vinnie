@@ -6,7 +6,7 @@ module.exports = function(grunt) {
       dist: {
         options: {
         	 sassDir: 'assets/sass',
-			 cssDir: 'build/css',
+			 cssDir: 'assets/css',
           outputStyle: 'expanded'
         }
       }
@@ -14,12 +14,9 @@ module.exports = function(grunt) {
     uglify: {
       dist: {
         files: {
-          'build/js/scripts.min.js': [
-            'assets/js/_*.js',
-            'assets/js/vendor/bootstrap/tab.js',
-            'assets/js/vendor/bootstrap/transition.js',
-            'assets/js/vendor/bootstrap/collapse.js'
-          ]
+          // 'build/js/scripts.min.js': [
+          //   'assets/js/_*.js'
+          // ]
         },
         options: {
           // JS source map: to enable, uncomment the lines below and update sourceMappingURL based on your install

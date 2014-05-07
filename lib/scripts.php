@@ -3,15 +3,15 @@
  * Enqueue scripts and stylesheets
  *
  * Enqueue stylesheets in the following order:
- * 1. /theme/build/css/vinnie.css
+ * 1. /theme/assets/css/vinnie.css
  *
  * Enqueue scripts in the following order:
  * 1. jquery-1.11.0.min.js via Google CDN
- * 2. /theme/build/js/vendor/modernizr-2.7.0.min.js
- * 3. /theme/build/js/main.min.js (in footer)
+ * 2. /theme/assets/js/vendor/modernizr-2.7.0.min.js
+ * 3. /theme/assets/js/main.min.js (in footer)
  */
 	function roots_scripts() {
-	  wp_enqueue_style('roots_main', get_template_directory_uri() . '/build/css/vinnie.css', false, 'c1a58eb4baaf24c3771085df3d54ff8d');
+	  wp_enqueue_style('roots_main', get_template_directory_uri() . '/assets/css/vinnie.css', false, 'c1a58eb4baaf24c3771085df3d54ff8d');
 
 	  // jQuery is loaded using the same method from HTML5 Boilerplate:
 	  // Grab Google CDN's latest jQuery with a protocol relative URL; fallback to local if offline
@@ -26,8 +26,8 @@
 	    wp_enqueue_script('comment-reply');
 	  }
 
-	  wp_register_script('modernizr', get_template_directory_uri() . '/build/js/vendor/modernizr-2.6.2.min.js', array(), null, false);
-	  wp_register_script('roots_scripts', get_template_directory_uri() . '/build/js/scripts.min.js', array(), '0fc6af96786d8f267c8686338a34cd38', true);
+	  wp_register_script('modernizr', get_template_directory_uri() . '/assets/js/vendor/modernizr-2.6.2.min.js', array(), null, false);
+	  wp_register_script('roots_scripts', get_template_directory_uri() . '/assets/js/scripts.min.js', array(), '0fc6af96786d8f267c8686338a34cd38', true);
 	  wp_enqueue_script('modernizr');
 	  wp_enqueue_script('jquery');
 	  wp_enqueue_script('roots_scripts');
@@ -39,7 +39,7 @@
 	  static $add_jquery_fallback = false;
 
 	  if ($add_jquery_fallback) {
-	    echo '<script>window.jQuery || document.write(\'<script src="' . get_template_directory_uri() . '/build/js/vendor/jquery-1.10.2.min.js"><\/script>\')</script>' . "\n";
+	    echo '<script>window.jQuery || document.write(\'<script src="' . get_template_directory_uri() . '/assets/js/vendor/jquery-1.10.2.min.js"><\/script>\')</script>' . "\n";
 	    $add_jquery_fallback = false;
 	  }
 

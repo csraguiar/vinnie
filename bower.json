@@ -2,7 +2,7 @@
   "name": "vinnie",
   "version": "0.0.1",
   "authors": [
-    "Cesar Aguiar <cesar@intentu.com>"
+    "Cesar Aguiar <hi@cesaraguiar.me>"
   ],
   "description": "A wordpress theme designed for cesaraguiar.me",
   "main": "build/css/vinnie.css",
@@ -27,8 +27,9 @@
     "tests"
   ],
   "devDependencies": {
+    "normalize-css": "~3.0.1",
     "bootstrap-sass-official": "~3.1.1+2",
     "html5-boilerplate": "~4.3.0",
-    "bourbon": "~4.0.1"
+    "bourbon": "~3.2.0"
   }
 }
