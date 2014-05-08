@@ -1,6 +1,9 @@
 // This overrides some variables from bootstrap
 
 //== Colors
+$primarycolor:  rgb(76,196,206);
+$secondarycolor:  rgb(236,26,36);
+$tertiarycolor:	rgb(255,170,0); 
 
 $gray-darker:            lighten(#000, 13.5%) !default; // #222
 $gray-dark:              lighten(#000, 20%) !default;   // #333
@@ -8,7 +11,30 @@ $gray:                   lighten(#000, 33.5%) !default; // #555
 $gray-light:             lighten(#000, 60%) !default;   // #999
 $gray-lighter:           lighten(#000, 93.5%) !default; // #eee
 
-$brand-primary:         red !default;
+$brand-primary:         $primarycolor !default;
+
+// The following might come useful when we wish
+// to define a custom white or a custom black
+$neutralcolor: $gray;
+$white: rgb(255,255,255);
+$black: rgb(0,0,0);
+
+//== Form states and alerts
+//
+//## Define colors for form feedback states and, by default, alerts.
+
+$state-success-text:             #54997F !default;
+$state-success-bg:               #CCFFDE !default;
+
+$state-info-text:                #525F66 !default;
+$state-info-bg:                  #F0F0F6 !default;
+
+$state-warning-text:             #8a6d3b !default;
+$state-warning-bg:               #fcf8e3 !default;
+
+$state-danger-text:              #a94442 !default;
+$state-danger-bg:                #f2dede !default;
+
 
 //== Scaffolding
 
@@ -20,8 +46,8 @@ $link-hover-color:      darken($link-color, 15%) !default;
 
 //== Typography
 
-$font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
+$font-family-sans-serif:  Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-serif:       "Roboto Slab", "Times New Roman", Times, serif !default;
 
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
 $font-family-base:        $font-family-sans-serif !default;
@@ -39,11 +65,12 @@ $font-size-h6:            ceil(($font-size-base * 0.85)) !default; // ~12px
 
 //** Unit-less `line-height` for use in components like buttons.
 $line-height-base:        1.428571429 !default; // 20/14
+$baselineheight:  $line-height-base;
 //** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
 $line-height-computed:    floor(($font-size-base * $line-height-base)) !default; // ~20px
 
 //** By default, this inherits from the `<body>`.
-$headings-font-family:    inherit !default;
+$headings-font-family:    $font-family-serif !default;
 $headings-font-weight:    500 !default;
 $headings-line-height:    1.1 !default;
 $headings-color:          inherit !default;

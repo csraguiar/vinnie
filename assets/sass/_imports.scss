@@ -13,8 +13,6 @@
 // Bootstrap Variables
 @import "../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/variables";
 
-
-
 // Bootstrap Mixins
 // TODO: check if there is a difference in performance when importing all the mixins at once
 @import "../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/center-block";
@@ -43,6 +41,9 @@
 // (Uncomment if needed and check grunffile.js for js pairs)
 // @import "../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/carousel";
 // @import "../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/modals";
+
+// Web Fonts
+@import "partials/fonts";
 
 // Custom Css for my template
 @import "partials/furniture";

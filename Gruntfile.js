@@ -31,13 +31,24 @@ module.exports = function(grunt) {
           'assets/sass/*.scss',
           'assets/sass/partials/**/*.scss'
         ],
-        tasks: ['compass']
+        tasks: ['compass'],
+	options: {
+	  livereload: true
+	}
       },
       js: {
         files: [
           'assets/js/_*.js'
         ],
         tasks: ['uglify']
+      },
+      markup: {
+      	files: [
+	  '**/*.php'
+	],
+	options: {
+	  livereload: true	
+	}
       }
     }
   });

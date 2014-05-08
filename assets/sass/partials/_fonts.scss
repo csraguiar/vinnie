@@ -1,0 +1,7 @@
+@include font-face("Roboto", "../fonts/roboto/roboto-regular-webfont");
+@include font-face("Roboto", "../fonts/roboto/roboto-bold-webfont", bold);
+@include font-face("Roboto", "../fonts/roboto/roboto-italic-webfont", normal, italic);
+
+@include font-face("Roboto Slab", "../fonts/roboto-slab/robotoslab-regular-webfont");
+@include font-face("Roboto Slab", "../fonts/roboto-slab/robotoslab-light-webfont", 300);
+@include font-face("Roboto Slab", "../fonts/roboto-slab/robotoslab-bold-webfont", bold);

@@ -76,6 +76,22 @@ authentic aesthetic cardigan fap.</p>
 </div>
 </div>
 
+<h3>Tertiary</h3>
+<div class="swatch swatch-tertiary">
+<div class="swatch-row swatch-row-one clearfix">
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+</div>
+<div class="swatch-row swatch-row-two clearfix">
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+</div>
+</div>
+
 <h3>Neutral</h3>
 <div class="swatch swatch-neutral">
 <div class="swatch-row swatch-row-one clearfix">
@@ -115,7 +131,16 @@ authentic aesthetic cardigan fap.</p>
 
 <h2>Buttons</h2>
 
-<p><a href="#" class="btn">Button</a> <a href="#" class="btn-primary">Button</a></p>
+<p><a href="#" class="btn">Default</a> <a href="#" class="btn btn-smooth">Smooth</a></p>
+
+<hr>
+
+<h2>Alerts</h2>
+
+<div class="alert alert-danger"><strong>Hello!</strong> This is a <a href="#" class="alert-link">danger</a> alert.</div>
+<div class="alert alert-info"><strong>Hello!</strong> This is an info alert.</div>
+<div class="alert alert-success"><strong>Hello!</strong> This is a success alert.</div>
+<div class="alert alert-warning"><strong>Hello!</strong> This is a warning alert.</div>
 
 <hr>
 

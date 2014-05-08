@@ -458,7 +458,7 @@ html {
 
 /* line 27, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_scaffolding.scss */
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.42857;
   color: #333333;
@@ -477,12 +477,12 @@ textarea {
 
 /* line 48, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_scaffolding.scss */
 a {
-  color: red;
+  color: #4cc4ce;
   text-decoration: none;
 }
 /* line 53, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_scaffolding.scss */
 a:hover, a:focus {
-  color: #b30000;
+  color: #2c98a1;
   text-decoration: underline;
 }
 /* line 58, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_scaffolding.scss */
@@ -567,7 +567,7 @@ hr {
 /* line 10, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_type.scss */
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: inherit;
+  font-family: "Roboto Slab", "Times New Roman", Times, serif;
   font-weight: 500;
   line-height: 1.1;
   color: inherit;
@@ -726,32 +726,32 @@ mark,
 
 /* line 5, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss */
 .text-primary {
-  color: red;
+  color: #4cc4ce;
 }
 
 /* line 8, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss */
 a.text-primary:hover {
-  color: #cc0000;
+  color: #32abb5;
 }
 
 /* line 5, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss */
 .text-success {
-  color: #3c763d;
+  color: #54997f;
 }
 
 /* line 8, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss */
 a.text-success:hover {
-  color: #2b542c;
+  color: #427864;
 }
 
 /* line 5, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss */
 .text-info {
-  color: #31708f;
+  color: #525f66;
 }
 
 /* line 8, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss */
 a.text-info:hover {
-  color: #245269;
+  color: #3b454a;
 }
 
 /* line 5, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss */
@@ -781,32 +781,32 @@ a.text-danger:hover {
 
 /* line 5, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_background-variant.scss */
 .bg-primary {
-  background-color: red;
+  background-color: #4cc4ce;
 }
 
 /* line 8, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_background-variant.scss */
 a.bg-primary:hover {
-  background-color: #cc0000;
+  background-color: #32abb5;
 }
 
 /* line 5, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_background-variant.scss */
 .bg-success {
-  background-color: #dff0d8;
+  background-color: #ccffde;
 }
 
 /* line 8, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_background-variant.scss */
 a.bg-success:hover {
-  background-color: #c1e2b3;
+  background-color: #99ffbd;
 }
 
 /* line 5, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_background-variant.scss */
 .bg-info {
-  background-color: #d9edf7;
+  background-color: #f0f0f6;
 }
 
 /* line 8, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_background-variant.scss */
 a.bg-info:hover {
-  background-color: #afd9ee;
+  background-color: #d0d0e3;
 }
 
 /* line 5, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_background-variant.scss */
@@ -1095,32 +1095,32 @@ pre code {
 
 /* line 56, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_alerts.scss */
 .alert-success {
-  background-color: #dff0d8;
-  border-color: #d6e9c6;
-  color: #3c763d;
+  background-color: #ccffde;
+  border-color: #b3ffc1;
+  color: #54997f;
 }
 /* line 8, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_alerts.scss */
 .alert-success hr {
-  border-top-color: #c9e2b3;
+  border-top-color: #99ffac;
 }
 /* line 11, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_alerts.scss */
 .alert-success .alert-link {
-  color: #2b542c;
+  color: #427864;
 }
 
 /* line 59, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_alerts.scss */
 .alert-info {
-  background-color: #d9edf7;
-  border-color: #bce8f1;
-  color: #31708f;
+  background-color: #f0f0f6;
+  border-color: #dadce9;
+  color: #525f66;
 }
 /* line 8, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_alerts.scss */
 .alert-info hr {
-  border-top-color: #a6e1ec;
+  border-top-color: #cacddf;
 }
 /* line 11, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_alerts.scss */
 .alert-info .alert-link {
-  color: #245269;
+  color: #3b454a;
 }
 
 /* line 62, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_alerts.scss */
@@ -1502,27 +1502,27 @@ select[multiple].input-lg {
 .has-success .checkbox,
 .has-success .radio-inline,
 .has-success .checkbox-inline {
-  color: #3c763d;
+  color: #54997f;
 }
 /* line 17, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_forms.scss */
 .has-success .form-control {
-  border-color: #3c763d;
+  border-color: #54997f;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 /* line 20, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_forms.scss */
 .has-success .form-control:focus {
-  border-color: #2b542c;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
+  border-color: #427864;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #91c2b0;
 }
 /* line 27, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_forms.scss */
 .has-success .input-group-addon {
-  color: #3c763d;
-  border-color: #3c763d;
-  background-color: #dff0d8;
+  color: #54997f;
+  border-color: #54997f;
+  background-color: #ccffde;
 }
 /* line 33, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_forms.scss */
 .has-success .form-control-feedback {
-  color: #3c763d;
+  color: #54997f;
 }
 
 /* line 13, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_forms.scss */
@@ -1837,13 +1837,13 @@ table th[class*="col-"] {
 .table > tfoot > tr > th.success,
 .table > tfoot > tr.success > td,
 .table > tfoot > tr.success > th {
-  background-color: #dff0d8;
+  background-color: #ccffde;
 }
 
 /* line 24, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_table-row.scss */
 .table-hover > tbody > tr > td.success:hover,
 .table-hover > tbody > tr > th.success:hover, .table-hover > tbody > tr.success:hover > td, .table-hover > tbody > tr:hover > .success, .table-hover > tbody > tr.success:hover > th {
-  background-color: #d0e9c6;
+  background-color: #b3ffce;
 }
 
 /* line 12, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_table-row.scss */
@@ -1857,13 +1857,13 @@ table th[class*="col-"] {
 .table > tfoot > tr > th.info,
 .table > tfoot > tr.info > td,
 .table > tfoot > tr.info > th {
-  background-color: #d9edf7;
+  background-color: #f0f0f6;
 }
 
 /* line 24, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_table-row.scss */
 .table-hover > tbody > tr > td.info:hover,
 .table-hover > tbody > tr > th.info:hover, .table-hover > tbody > tr.info:hover > td, .table-hover > tbody > tr:hover > .info, .table-hover > tbody > tr.info:hover > th {
-  background-color: #c4e3f3;
+  background-color: #e0e0ec;
 }
 
 /* line 12, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_table-row.scss */
@@ -1959,6 +1959,286 @@ table th[class*="col-"] {
   .table-responsive > .table-bordered > tfoot > tr:last-child > td {
     border-bottom: 0;
   }
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/roboto/roboto-regular-webfont.eot");
+  src: url("../fonts/roboto/roboto-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/roboto-regular-webfont.woff") format("woff"), url("../fonts/roboto/roboto-regular-webfont.ttf") format("truetype"), url("../fonts/roboto/roboto-regular-webfont.svg#Roboto") format("svg");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/roboto/roboto-bold-webfont.eot");
+  src: url("../fonts/roboto/roboto-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/roboto-bold-webfont.woff") format("woff"), url("../fonts/roboto/roboto-bold-webfont.ttf") format("truetype"), url("../fonts/roboto/roboto-bold-webfont.svg#Roboto") format("svg");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: normal;
+  font-style: italic;
+  src: url("../fonts/roboto/roboto-italic-webfont.eot");
+  src: url("../fonts/roboto/roboto-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/roboto-italic-webfont.woff") format("woff"), url("../fonts/roboto/roboto-italic-webfont.ttf") format("truetype"), url("../fonts/roboto/roboto-italic-webfont.svg#Roboto") format("svg");
+}
+
+@font-face {
+  font-family: "Roboto Slab";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/roboto-slab/robotoslab-regular-webfont.eot");
+  src: url("../fonts/roboto-slab/robotoslab-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab/robotoslab-regular-webfont.woff") format("woff"), url("../fonts/roboto-slab/robotoslab-regular-webfont.ttf") format("truetype"), url("../fonts/roboto-slab/robotoslab-regular-webfont.svg#Roboto Slab") format("svg");
+}
+
+@font-face {
+  font-family: "Roboto Slab";
+  font-weight: 300;
+  font-style: normal;
+  src: url("../fonts/roboto-slab/robotoslab-light-webfont.eot");
+  src: url("../fonts/roboto-slab/robotoslab-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab/robotoslab-light-webfont.woff") format("woff"), url("../fonts/roboto-slab/robotoslab-light-webfont.ttf") format("truetype"), url("../fonts/roboto-slab/robotoslab-light-webfont.svg#Roboto Slab") format("svg");
+}
+
+@font-face {
+  font-family: "Roboto Slab";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/roboto-slab/robotoslab-bold-webfont.eot");
+  src: url("../fonts/roboto-slab/robotoslab-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab/robotoslab-bold-webfont.woff") format("woff"), url("../fonts/roboto-slab/robotoslab-bold-webfont.ttf") format("truetype"), url("../fonts/roboto-slab/robotoslab-bold-webfont.svg#Roboto Slab") format("svg");
+}
+
+/* line 1, ../sass/partials/_furniture.scss */
+.container {
+  margin: 5%;
+}
+
+/* line 6, ../sass/partials/_furniture.scss */
+.btn {
+  background-color: #4cc4ce;
+  border-radius: 3px;
+  border: none;
+  color: #333333;
+  display: inline-block;
+  font-size: inherit;
+  font-weight: bold;
+  padding: 7px 18px;
+  text-decoration: none;
+  background-clip: padding-box;
+  color: #dcf4f5;
+}
+/* line 352, ../../bower_components/bourbon/dist/addons/_button.scss */
+.btn:hover:not(:disabled) {
+  background-color: #5cced8;
+  cursor: pointer;
+}
+/* line 364, ../../bower_components/bourbon/dist/addons/_button.scss */
+.btn:active:not(:disabled), .btn:focus:not(:disabled) {
+  background-color: #3db9c3;
+  cursor: pointer;
+}
+/* line 51, ../../bower_components/bourbon/dist/addons/_button.scss */
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+/* line 11, ../sass/partials/_furniture.scss */
+.btn:hover:not(:disabled) {
+  color: white;
+  text-decoration: none;
+}
+
+/* line 17, ../sass/partials/_furniture.scss */
+.btn-smooth {
+  background-color: #eeeeee;
+  color: #999999;
+}
+/* line 21, ../sass/partials/_furniture.scss */
+.btn-smooth:hover:not(:disabled) {
+  background-color: #dfdfdf;
+  color: #555555;
+}
+
+/* line 29, ../sass/partials/_furniture.scss */
+.swatch {
+  margin: 0 0 1.42857 0;
+  padding: 0;
+}
+
+/* line 33, ../sass/partials/_furniture.scss */
+.swatch-row {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+}
+/* line 15, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
+.swatch-row:before, .swatch-row:after {
+  content: " ";
+  display: table;
+}
+/* line 19, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
+.swatch-row:after {
+  clear: both;
+}
+
+/* line 40, ../sass/partials/_furniture.scss */
+.swatch-row-one {
+  background-color: black;
+}
+
+/* line 43, ../sass/partials/_furniture.scss */
+.swatch-row-two {
+  background-color: white;
+}
+
+/* line 46, ../sass/partials/_furniture.scss */
+.swatch-row span {
+  display: block;
+  float: left;
+  width: 50px;
+  height: 50px;
+}
+
+/* line 54, ../sass/partials/_furniture.scss */
+.swatch-base span:nth-child(1) {
+  background-color: rgba(76, 196, 206, 0.9);
+}
+
+/* line 57, ../sass/partials/_furniture.scss */
+.swatch-base span:nth-child(2) {
+  background-color: rgba(76, 196, 206, 0.8);
+}
+
+/* line 60, ../sass/partials/_furniture.scss */
+.swatch-base span:nth-child(3) {
+  background-color: rgba(76, 196, 206, 0.7);
+}
+
+/* line 63, ../sass/partials/_furniture.scss */
+.swatch-base span:nth-child(4) {
+  background-color: rgba(76, 196, 206, 0.6);
+}
+
+/* line 68, ../sass/partials/_furniture.scss */
+.swatch-secondary span:nth-child(1) {
+  background-color: rgba(236, 26, 36, 0.9);
+}
+
+/* line 71, ../sass/partials/_furniture.scss */
+.swatch-secondary span:nth-child(2) {
+  background-color: rgba(236, 26, 36, 0.8);
+}
+
+/* line 74, ../sass/partials/_furniture.scss */
+.swatch-secondary span:nth-child(3) {
+  background-color: rgba(236, 26, 36, 0.7);
+}
+
+/* line 77, ../sass/partials/_furniture.scss */
+.swatch-secondary span:nth-child(4) {
+  background-color: rgba(236, 26, 36, 0.6);
+}
+
+/* line 82, ../sass/partials/_furniture.scss */
+.swatch-tertiary span:nth-child(1) {
+  background-color: rgba(255, 170, 0, 0.9);
+}
+
+/* line 85, ../sass/partials/_furniture.scss */
+.swatch-tertiary span:nth-child(2) {
+  background-color: rgba(255, 170, 0, 0.8);
+}
+
+/* line 88, ../sass/partials/_furniture.scss */
+.swatch-tertiary span:nth-child(3) {
+  background-color: rgba(255, 170, 0, 0.7);
+}
+
+/* line 91, ../sass/partials/_furniture.scss */
+.swatch-tertiary span:nth-child(4) {
+  background-color: rgba(255, 170, 0, 0.6);
+}
+
+/* line 96, ../sass/partials/_furniture.scss */
+.swatch-neutral span:nth-child(1) {
+  background-color: rgba(85, 85, 85, 0.9);
+}
+
+/* line 99, ../sass/partials/_furniture.scss */
+.swatch-neutral span:nth-child(2) {
+  background-color: rgba(85, 85, 85, 0.8);
+}
+
+/* line 102, ../sass/partials/_furniture.scss */
+.swatch-neutral span:nth-child(3) {
+  background-color: rgba(85, 85, 85, 0.7);
+}
+
+/* line 105, ../sass/partials/_furniture.scss */
+.swatch-neutral span:nth-child(4) {
+  background-color: rgba(85, 85, 85, 0.6);
+}
+
+/* line 110, ../sass/partials/_furniture.scss */
+.swatch-error span:nth-child(1) {
+  background-color: rgba(217, 83, 79, 0.9);
+}
+
+/* line 113, ../sass/partials/_furniture.scss */
+.swatch-error span:nth-child(2) {
+  background-color: rgba(217, 83, 79, 0.8);
+}
+
+/* line 116, ../sass/partials/_furniture.scss */
+.swatch-error span:nth-child(3) {
+  background-color: rgba(217, 83, 79, 0.7);
+}
+
+/* line 119, ../sass/partials/_furniture.scss */
+.swatch-error span:nth-child(4) {
+  background-color: rgba(217, 83, 79, 0.6);
+}
+
+/* line 124, ../sass/partials/_furniture.scss */
+.swatch-info span:nth-child(1) {
+  background-color: rgba(91, 192, 222, 0.9);
+}
+
+/* line 127, ../sass/partials/_furniture.scss */
+.swatch-info span:nth-child(2) {
+  background-color: rgba(91, 192, 222, 0.8);
+}
+
+/* line 130, ../sass/partials/_furniture.scss */
+.swatch-info span:nth-child(3) {
+  background-color: rgba(91, 192, 222, 0.7);
+}
+
+/* line 133, ../sass/partials/_furniture.scss */
+.swatch-info span:nth-child(4) {
+  background-color: rgba(91, 192, 222, 0.6);
+}
+
+/* line 138, ../sass/partials/_furniture.scss */
+.swatch-success span:nth-child(1) {
+  background-color: rgba(92, 184, 92, 0.9);
+}
+
+/* line 141, ../sass/partials/_furniture.scss */
+.swatch-success span:nth-child(2) {
+  background-color: rgba(92, 184, 92, 0.8);
+}
+
+/* line 144, ../sass/partials/_furniture.scss */
+.swatch-success span:nth-child(3) {
+  background-color: rgba(92, 184, 92, 0.7);
+}
+
+/* line 147, ../sass/partials/_furniture.scss */
+.swatch-success span:nth-child(4) {
+  background-color: rgba(92, 184, 92, 0.6);
 }
 
 @media print {
