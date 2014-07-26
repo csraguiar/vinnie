@@ -1,12 +1,12 @@
 'use strict';
-module.exports = function(grunt) {
+module.exports = function (grunt) {
 
   grunt.initConfig({
     compass: {
       dist: {
         options: {
-        	 sassDir: 'assets/sass',
-			 cssDir: 'assets/css',
+          sassDir: 'assets/sass',
+          cssDir: 'assets/css',
           outputStyle: 'expanded'
         }
       }
@@ -14,14 +14,10 @@ module.exports = function(grunt) {
     uglify: {
       dist: {
         files: {
-          // 'build/js/scripts.min.js': [
-          //   'assets/js/_*.js'
-          // ]
-        },
-        options: {
-          // JS source map: to enable, uncomment the lines below and update sourceMappingURL based on your install
-          // sourceMap: 'assets/js/scripts.min.js.map',
-          // sourceMappingURL: '/app/themes/roots/assets/js/scripts.min.js.map'
+          'assets/js/scripts.min.js': [
+            'assets/js/plugins.js',
+            'assets/js/custom.js'
+          ]
         }
       }
     },
@@ -32,23 +28,25 @@ module.exports = function(grunt) {
           'assets/sass/partials/**/*.scss'
         ],
         tasks: ['compass'],
-	options: {
-	  livereload: true
-	}
+        options: {
+          livereload: true
+        }
       },
       js: {
         files: [
-          'assets/js/_*.js'
+          'assets/js/custom.js',
+          'assets/js/plugins.js',
+          'assets/js/vendor/**/*.js',
         ],
         tasks: ['uglify']
       },
       markup: {
-      	files: [
-	  '**/*.php'
-	],
-	options: {
-	  livereload: true	
-	}
+        files: [
+          '**/*.php'
+        ],
+        options: {
+          livereload: true
+        }
       }
     }
   });

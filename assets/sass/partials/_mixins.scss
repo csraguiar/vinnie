@@ -1,7 +1,72 @@
-@mixin font-size($font-size: $font-size-base) {
+@mixin font-size($font-size: $textsize) {
 font-size : #{$font-size}px;
 font-size : #{$font-size / 10}rem; }
+
+@mixin heading-margin($heading-font-size, $baseline-height: $baselinebase, $bodytextsize: $textsize) {
+margin-bottom: #{($bodytextsize * $baseline-height) / $heading-font-size}em; }
 
 @mixin zero {
 margin : 0;
 padding : 0; }
+
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+    &:after {
+    clear: both;
+  }
+}
+
+@mixin tab-focus() {
+  // Default
+  outline: thin dotted;
+  // WebKit
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+/*
+ * Image replacement
+ */
+
+@mixin ir() {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  /* IE 6/7 fallback */
+  *text-indent: -9999px;
+
+  &:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%;
+  }
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+@mixin hidden() {
+  display: none !important;
+  visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+@mixin visuallyhidden() {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}

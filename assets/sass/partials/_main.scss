@@ -1,0 +1,252 @@
+html {
+	background: $bodycolor;
+	font-size: 62.5%;
+	-webkit-overflow-scrolling: touch;
+	-webkit-tap-highlight-color: $smallcolor;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%; 
+}
+
+body {
+	padding: $baselineheight 0;
+	@include font-size($textsize);
+	font-family: $primaryfont;
+	font-weight: 400;
+	font-style: normal;
+	line-height: $baselineheight;
+	color: $textcolor;
+}
+
+// ================================================================================================== 
+// Root Layout
+
+.wrap,
+[role="banner"],
+[role="contentinfo"] {
+	margin: 0 2em;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+// ================================================================================================== 
+// Logo
+
+.logo {
+	@include visuallyhidden();
+}
+
+// ================================================================================================== 
+// Typography
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	text-rendering : optimizelegibility;
+	color: $headingcolor;
+	font-weight: 800;
+}
+
+h1, .h1 {
+	@include font-size(35.596);
+	line-height: $baselineheight /1.4;
+	margin-bottom: 0;
+}
+
+h2, .h2,
+h3, .h3 {
+	@include font-size(22.0);
+	line-height: $baselineheight /1.2; 
+	margin-bottom: $baselineheight /1.8;
+}
+
+h3, .h3 {
+	font-weight: 400;
+}
+
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+	@include font-size($textsize);
+	line-height: $baselineheight;
+	margin-bottom: $baselineheight;
+}
+
+p.intro {
+	@include font-size(22.0);
+	line-height: $baselineheight /1.2;
+	margin: $baselineheight /1.2 0;
+}
+
+p {
+	@include font-size($textsize);
+	margin-bottom: $baselineheight;
+	font-weight: 300;
+}
+
+p.pullquote {
+	padding-left: 11px;
+	border-style: solid;
+	border-left-width: 3px;
+	margin-bottom: 1em;
+}
+
+p.author {
+	@include font-size(11.0);
+	letter-spacing: 1px;
+	color: $smallcolor;
+}
+
+small {
+	color: $smallcolor;
+}
+
+.entry-meta {
+	@include font-size(11.0);
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	@include heading-margin(11.0);
+	border-bottom: 1px solid #ddd;
+	border-top: 1px solid #ddd;
+	padding-left: 2px;
+	line-height: $baselineheight;
+
+	a {
+		color: $smallcolor;
+
+		&:hover {
+			color: $linkcolor-hover;
+		}
+	}
+}
+
+// ================================================================================================== 
+// Links
+
+a {
+	color: $linkcolor;
+	text-decoration: none;
+
+	&:hover,
+	&:focus {
+	color: $linkcolor-hover;
+	}
+
+	&:focus {
+	@include tab-focus();
+	}
+}
+
+// ================================================================================================== 
+// Navigation
+
+[role="navigation"] {
+margin-bottom: $baselineheight;
+
+	ul {
+		@include zero();
+		margin-left: -2%;
+		text-align: center;
+
+		li {
+		line-height: $baselineheight /1.8;
+		display: inline-block;
+		margin-left: 2%;
+		}
+	}
+
+	a {
+		@include font-size(11.0);
+		color: $smallcolor;
+		text-transform: uppercase;
+		font-weight: 300;
+		letter-spacing: 1px;
+
+		&:hover {
+			color: #000;
+		}
+	}
+}
+
+// ================================================================================================== 
+// To Sort Out
+
+
+// ================================================================================================== 
+// Media Queries
+
+/*
+@media screen and (max-width: 900px) {
+	.wrap,
+	[role="banner"],
+	[role="contentinfo"] {
+		margin: 0 auto;
+		width: 100%;
+		padding: 0 2em;
+	}
+
+} 
+
+@media screen and (max-width: 480px) {
+	body {
+		font-size: 90%;
+	}
+
+	h1 {
+		font-size: 3.75em;
+		line-height: 0.929em;
+	}
+
+	p {
+		font-size: 16px;
+	}
+
+	p.pullquote {
+		font-size: 16px;
+	}
+
+} 
+*/
+
+@media screen and (min-width: 600px) {
+
+	html {
+	padding: $baselineheight *2 0;
+	font-size: 70.3125%; // body font-size: 16px -> 18px; Not quite sure about this method.
+	}
+
+	h1, .h1 {
+	@include font-size(54.0);
+	}
+
+	nav[role="navigation"] {
+	margin-bottom: $baselineheight *2;
+
+	ul {
+		@include zero();
+		text-align: left;
+
+		li {
+		line-height: $baselineheight /1.8;
+		display: list-item;
+		margin-left: 0;
+		}
+	}
+
+	}
+
+	.entry-meta {
+	border-top-style: none;
+	}
+
+} 
+
+@media screen and (min-width: 873px) {
+
+	.wrap,
+	[role="banner"],
+	[role="contentinfo"] {
+	margin: 0 auto;
+	max-width: $maxwidth;
+	}
+
+} 

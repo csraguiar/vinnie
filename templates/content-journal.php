@@ -1,13 +1,4 @@
-<?php while (have_posts()) : the_post(); $summary = get_post_custom_values('post_summary')[0]; ?>
-
-<header>
-<div class="single-collumn">
-<h1><?php the_title(); ?></h1>
-<p class="lead"><?php echo $summary; ?></p>
-</div>
-</header>
-
-<?php endwhile; wp_reset_postdata(); 
+<?php
 
 $args = array(
 	'category_name' => 'journal',
@@ -20,7 +11,7 @@ $journal = new WP_Query( $args ); ?>
 <ul class="h-feed">
 <?php while ( $journal->have_posts() ) : $journal->the_post(); $entry_summary = get_post_custom_values('post_summary')[0]; ?>	
 <li>
-<article class="h-entry hentry single-collumn">
+<article class="h-entry hentry">
 <h2 class="p-name entry-title"><a href="<?php echo get_the_permalink(); ?>"><?php the_title(); ?></a></h2>
 <p class="p-summary entry-summary"><?php echo $entry_summary; ?></p>
 <?php get_template_part('templates/entry-meta'); ?>

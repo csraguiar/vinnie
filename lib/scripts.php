@@ -28,9 +28,18 @@
 
 	  wp_register_script('modernizr', get_template_directory_uri() . '/assets/js/vendor/modernizr-2.6.2.min.js', array(), null, false);
 	  wp_register_script('roots_scripts', get_template_directory_uri() . '/assets/js/scripts.min.js', array(), '0fc6af96786d8f267c8686338a34cd38', true);
+
+	  wp_register_script('roots_scripts', get_template_directory_uri() . '/assets/js/scripts.min.js', array(), '0fc6af96786d8f267c8686338a34cd38', true);
 	  wp_enqueue_script('modernizr');
 	  wp_enqueue_script('jquery');
 	  wp_enqueue_script('roots_scripts');
+
+	  /*
+	   * Gridsetapp: #DISABLE for production
+	   */
+
+	  wp_register_script('gridsetapp', get_template_directory_uri() . '/assets/js/vendor/gridset-overlay.js', array(), '0.1.0', true);
+	  wp_enqueue_script('gridsetapp');
 	}
 	add_action('wp_enqueue_scripts', 'roots_scripts', 100);
 

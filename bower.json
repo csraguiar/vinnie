@@ -27,7 +27,6 @@
     "tests"
   ],
   "devDependencies": {
-    "normalize-css": "~3.0.1",
     "bootstrap-sass-official": "~3.1.1+2",
     "html5-boilerplate": "~4.3.0",
     "bourbon": "~3.2.0"

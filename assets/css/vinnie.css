@@ -1,2099 +1,121 @@
-/* Cesar <hi@cesaraguiar.me> */
-/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
-/**
- * 1. Set default font family to sans-serif.
- * 2. Prevent iOS text size adjust after orientation change, without disabling
- *    user zoom.
- */
-/* line 9, ../sass/partials/_normalize.scss */
-html {
-  font-family: sans-serif;
-  /* 1 */
-  -ms-text-size-adjust: 100%;
-  /* 2 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
-}
+/* 
 
-/**
- * Remove default margin.
- */
-/* line 19, ../sass/partials/_normalize.scss */
-body {
+                        __   _               
+  ___ _ ____ ___  ___  / /_ (_)___  ___ _ ___
+ / _ `// __// -_)/ -_)/ __// // _ \/ _ `/(_-<
+ \_, //_/   \__/ \__/ \__//_//_//_/\_, //___/
+/___/                             /___/      
+
+ Look here for the readable tinkering:
+ (github url)
+
+ Cesar <hi@cesaraguiar.me>
+
+*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 18, ../sass/partials/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
   margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
-/* HTML5 display definitions
-   ========================================================================== */
-/**
- * Correct `block` display not defined for any HTML5 element in IE 8/9.
- * Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
- * Correct `block` display not defined for `main` in IE 11.
- */
-/* line 43, ../sass/partials/_normalize.scss */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-nav,
-section,
-summary {
+/* HTML5 display-role reset for older browsers */
+/* line 28, ../sass/partials/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-/**
- * 1. Correct `inline-block` display not defined in IE 8/9.
- * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
- */
-/* line 55, ../sass/partials/_normalize.scss */
-audio,
-canvas,
-progress,
-video {
-  display: inline-block;
-  /* 1 */
-  vertical-align: baseline;
-  /* 2 */
+/* line 31, ../sass/partials/_reset.scss */
+body {
+  line-height: 1;
 }
 
-/**
- * Prevent modern browsers from displaying `audio` without controls.
- * Remove excess height in iOS 5 devices.
- */
-/* line 65, ../sass/partials/_normalize.scss */
-audio:not([controls]) {
-  display: none;
-  height: 0;
+/* line 34, ../sass/partials/_reset.scss */
+ol, ul {
+  list-style: none;
 }
 
-/**
- * Address `[hidden]` styling not present in IE 8/9/10.
- * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
- */
-/* line 76, ../sass/partials/_normalize.scss */
-[hidden],
-template {
-  display: none;
+/* line 37, ../sass/partials/_reset.scss */
+blockquote, q {
+  quotes: none;
 }
 
-/* Links
-   ========================================================================== */
-/**
- * Remove the gray background color from active links in IE 10.
- */
-/* line 87, ../sass/partials/_normalize.scss */
-a {
-  background: transparent;
+/* line 41, ../sass/partials/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
 }
 
-/**
- * Improve readability when focused and also mouse hovered in all browsers.
- */
-/* line 96, ../sass/partials/_normalize.scss */
-a:active,
-a:hover {
-  outline: 0;
-}
-
-/* Text-level semantics
-   ========================================================================== */
-/**
- * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
- */
-/* line 107, ../sass/partials/_normalize.scss */
-abbr[title] {
-  border-bottom: 1px dotted;
-}
-
-/**
- * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
- */
-/* line 116, ../sass/partials/_normalize.scss */
-b,
-strong {
-  font-weight: bold;
-}
-
-/**
- * Address styling not present in Safari and Chrome.
- */
-/* line 124, ../sass/partials/_normalize.scss */
-dfn {
-  font-style: italic;
-}
-
-/**
- * Address variable `h1` font-size and margin within `section` and `article`
- * contexts in Firefox 4+, Safari, and Chrome.
- */
-/* line 133, ../sass/partials/_normalize.scss */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
-/**
- * Address styling not present in IE 8/9.
- */
-/* line 142, ../sass/partials/_normalize.scss */
-mark {
-  background: #ff0;
-  color: #000;
-}
-
-/**
- * Address inconsistent and variable font size in all browsers.
- */
-/* line 151, ../sass/partials/_normalize.scss */
-small {
-  font-size: 80%;
-}
-
-/**
- * Prevent `sub` and `sup` affecting `line-height` in all browsers.
- */
-/* line 160, ../sass/partials/_normalize.scss */
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-/* line 167, ../sass/partials/_normalize.scss */
-sup {
-  top: -0.5em;
-}
-
-/* line 171, ../sass/partials/_normalize.scss */
-sub {
-  bottom: -0.25em;
-}
-
-/* Embedded content
-   ========================================================================== */
-/**
- * Remove border when inside `a` element in IE 8/9/10.
- */
-/* line 182, ../sass/partials/_normalize.scss */
-img {
-  border: 0;
-}
-
-/**
- * Correct overflow not hidden in IE 9/10/11.
- */
-/* line 190, ../sass/partials/_normalize.scss */
-svg:not(:root) {
-  overflow: hidden;
-}
-
-/* Grouping content
-   ========================================================================== */
-/**
- * Address margin not present in IE 8/9 and Safari.
- */
-/* line 201, ../sass/partials/_normalize.scss */
-figure {
-  margin: 1em 40px;
-}
-
-/**
- * Address differences between Firefox and other browsers.
- */
-/* line 209, ../sass/partials/_normalize.scss */
-hr {
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  height: 0;
-}
-
-/**
- * Contain overflow in all browsers.
- */
-/* line 219, ../sass/partials/_normalize.scss */
-pre {
-  overflow: auto;
-}
-
-/**
- * Address odd `em`-unit font size rendering in all browsers.
- */
-/* line 230, ../sass/partials/_normalize.scss */
-code,
-kbd,
-pre,
-samp {
-  font-family: monospace, monospace;
-  font-size: 1em;
-}
-
-/* Forms
-   ========================================================================== */
-/**
- * Known limitation: by default, Chrome and Safari on OS X allow very limited
- * styling of `select`, unless a `border` property is set.
- */
-/**
- * 1. Correct color not being inherited.
- *    Known issue: affects color of disabled elements.
- * 2. Correct font properties not being inherited.
- * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
- */
-/* line 254, ../sass/partials/_normalize.scss */
-button,
-input,
-optgroup,
-select,
-textarea {
-  color: inherit;
-  /* 1 */
-  font: inherit;
-  /* 2 */
-  margin: 0;
-  /* 3 */
-}
-
-/**
- * Address `overflow` set to `hidden` in IE 8/9/10/11.
- */
-/* line 264, ../sass/partials/_normalize.scss */
-button {
-  overflow: visible;
-}
-
-/**
- * Address inconsistent `text-transform` inheritance for `button` and `select`.
- * All other form control elements do not inherit `text-transform` values.
- * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
- * Correct `select` style inheritance in Firefox.
- */
-/* line 276, ../sass/partials/_normalize.scss */
-button,
-select {
-  text-transform: none;
-}
-
-/**
- * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
- *    and `video` controls.
- * 2. Correct inability to style clickable `input` types in iOS.
- * 3. Improve usability and consistency of cursor style between image-type
- *    `input` and others.
- */
-/* line 291, ../sass/partials/_normalize.scss */
-button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  -webkit-appearance: button;
-  /* 2 */
-  cursor: pointer;
-  /* 3 */
-}
-
-/**
- * Re-set default cursor for disabled elements.
- */
-/* line 301, ../sass/partials/_normalize.scss */
-button[disabled],
-html input[disabled] {
-  cursor: default;
-}
-
-/**
- * Remove inner padding and border in Firefox 4+.
- */
-/* line 310, ../sass/partials/_normalize.scss */
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-
-/**
- * Address Firefox 4+ setting `line-height` on `input` using `!important` in
- * the UA stylesheet.
- */
-/* line 320, ../sass/partials/_normalize.scss */
-input {
-  line-height: normal;
-}
-
-/**
- * It's recommended that you don't attempt to style these elements.
- * Firefox's implementation doesn't respect box-sizing, padding, or width.
- *
- * 1. Address box sizing set to `content-box` in IE 8/9/10.
- * 2. Remove excess padding in IE 8/9/10.
- */
-/* line 333, ../sass/partials/_normalize.scss */
-input[type="checkbox"],
-input[type="radio"] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */
-}
-
-/**
- * Fix the cursor style for Chrome's increment/decrement buttons. For certain
- * `font-size` values of the `input`, it causes the cursor style of the
- * decrement button to change from `default` to `text`.
- */
-/* line 345, ../sass/partials/_normalize.scss */
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-  height: auto;
-}
-
-/**
- * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
- * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
- *    (include `-moz` to future-proof).
- */
-/* line 355, ../sass/partials/_normalize.scss */
-input[type="search"] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
-  /* 2 */
-  box-sizing: content-box;
-}
-
-/**
- * Remove inner padding and search cancel button in Safari and Chrome on OS X.
- * Safari (but not Chrome) clips the cancel button when the search input has
- * padding (and `textfield` appearance).
- */
-/* line 369, ../sass/partials/_normalize.scss */
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-/**
- * Define consistent border, margin, and padding.
- */
-/* line 377, ../sass/partials/_normalize.scss */
-fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
-}
-
-/**
- * 1. Correct `color` not being inherited in IE 8/9/10/11.
- * 2. Remove padding so people aren't caught out if they zero out fieldsets.
- */
-/* line 388, ../sass/partials/_normalize.scss */
-legend {
-  border: 0;
-  /* 1 */
-  padding: 0;
-  /* 2 */
-}
-
-/**
- * Remove default vertical scrollbar in IE 8/9/10/11.
- */
-/* line 397, ../sass/partials/_normalize.scss */
-textarea {
-  overflow: auto;
-}
-
-/**
- * Don't inherit the `font-weight` (applied by a rule above).
- * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
- */
-/* line 406, ../sass/partials/_normalize.scss */
-optgroup {
-  font-weight: bold;
-}
-
-/* Tables
-   ========================================================================== */
-/**
- * Remove most spacing between table cells.
- */
-/* line 417, ../sass/partials/_normalize.scss */
+/* line 45, ../sass/partials/_reset.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 423, ../sass/partials/_normalize.scss */
-td,
-th {
-  padding: 0;
-}
-
-/* line 11, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_scaffolding.scss */
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-/* line 15, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_scaffolding.scss */
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-/* line 22, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_scaffolding.scss */
-html {
-  font-size: 62.5%;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-/* line 27, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_scaffolding.scss */
-body {
-  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.42857;
-  color: #333333;
-  background-color: white;
-}
-
-/* line 39, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_scaffolding.scss */
-input,
-button,
-select,
-textarea {
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
-}
-
-/* line 48, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_scaffolding.scss */
-a {
-  color: #4cc4ce;
-  text-decoration: none;
-}
-/* line 53, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_scaffolding.scss */
-a:hover, a:focus {
-  color: #2c98a1;
-  text-decoration: underline;
-}
-/* line 58, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_scaffolding.scss */
-a:focus {
-  outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
-}
-
-/* line 69, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_scaffolding.scss */
-figure {
-  margin: 0;
-}
-
-/* line 76, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_scaffolding.scss */
-img {
-  vertical-align: middle;
-}
-
-/* line 81, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_scaffolding.scss */
-.img-responsive {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-/* line 86, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_scaffolding.scss */
-.img-rounded {
-  border-radius: 6px;
-}
-
-/* line 93, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_scaffolding.scss */
-.img-thumbnail {
-  padding: 4px;
-  line-height: 1.42857;
-  background-color: white;
-  border: 1px solid #dddddd;
-  border-radius: 4px;
-  -webkit-transition: all 0.2s ease-in-out;
-  -moz-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  display: inline-block;
-  max-width: 100%;
-  height: auto;
-}
-
-/* line 106, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_scaffolding.scss */
-.img-circle {
-  border-radius: 50%;
-}
-
-/* line 113, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_scaffolding.scss */
-hr {
-  margin-top: 22px;
-  margin-bottom: 22px;
-  border: 0;
-  border-top: 1px solid #eeeeee;
-}
-
-/* line 125, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_scaffolding.scss */
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
-}
-
-/* line 142, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_scaffolding.scss */
-.sr-only-focusable:active, .sr-only-focusable:focus {
-  position: static;
-  width: auto;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  clip: auto;
-}
-
-/* line 10, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_type.scss */
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: "Roboto Slab", "Times New Roman", Times, serif;
-  font-weight: 500;
-  line-height: 1.1;
-  color: inherit;
-}
-/* line 17, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_type.scss */
-h1 small,
-h1 .small, h2 small,
-h2 .small, h3 small,
-h3 .small, h4 small,
-h4 .small, h5 small,
-h5 .small, h6 small,
-h6 .small,
-.h1 small,
-.h1 .small, .h2 small,
-.h2 .small, .h3 small,
-.h3 .small, .h4 small,
-.h4 .small, .h5 small,
-.h5 .small, .h6 small,
-.h6 .small {
-  font-weight: normal;
-  line-height: 1;
-  color: #999999;
-}
-
-/* line 26, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_type.scss */
-h1, .h1,
-h2, .h2,
-h3, .h3 {
-  margin-top: 22px;
-  margin-bottom: 11px;
-}
-/* line 31, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_type.scss */
-h1 small,
-h1 .small, .h1 small,
-.h1 .small,
-h2 small,
-h2 .small, .h2 small,
-.h2 .small,
-h3 small,
-h3 .small, .h3 small,
-.h3 .small {
-  font-size: 65%;
-}
-
-/* line 37, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_type.scss */
-h4, .h4,
-h5, .h5,
-h6, .h6 {
-  margin-top: 11px;
-  margin-bottom: 11px;
-}
-/* line 42, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_type.scss */
-h4 small,
-h4 .small, .h4 small,
-.h4 .small,
-h5 small,
-h5 .small, .h5 small,
-.h5 .small,
-h6 small,
-h6 .small, .h6 small,
-.h6 .small {
-  font-size: 75%;
-}
-
-/* line 47, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_type.scss */
-h1, .h1 {
-  font-size: 41px;
-}
-
-/* line 48, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_type.scss */
-h2, .h2 {
-  font-size: 34px;
-}
-
-/* line 49, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_type.scss */
-h3, .h3 {
-  font-size: 28px;
-}
-
-/* line 50, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_type.scss */
-h4, .h4 {
-  font-size: 20px;
-}
-
-/* line 51, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_type.scss */
-h5, .h5 {
-  font-size: 16px;
-}
-
-/* line 52, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_type.scss */
-h6, .h6 {
-  font-size: 14px;
-}
-
-/* line 58, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_type.scss */
-p {
-  margin: 0 0 11px;
-}
-
-/* line 62, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_type.scss */
-.lead {
-  margin-bottom: 22px;
-  font-size: 18px;
-  font-weight: 200;
-  line-height: 1.4;
-}
-@media (min-width: 768px) {
-  /* line 62, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_type.scss */
-  .lead {
-    font-size: 24px;
-  }
-}
-
-/* line 79, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_type.scss */
-small,
-.small {
-  font-size: 85%;
-}
-
-/* line 82, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_type.scss */
-cite {
-  font-style: normal;
-}
-
-/* line 85, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_type.scss */
-mark,
-.mark {
-  background-color: #fcf8e3;
-  padding: .2em;
-}
-
-/* line 91, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_type.scss */
-.text-left {
-  text-align: left;
-}
-
-/* line 92, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_type.scss */
-.text-right {
-  text-align: right;
-}
-
-/* line 93, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_type.scss */
-.text-center {
-  text-align: center;
-}
-
-/* line 94, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_type.scss */
-.text-justify {
-  text-align: justify;
-}
-
-/* line 97, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_type.scss */
-.text-muted {
-  color: #999999;
-}
-
-/* line 5, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss */
-.text-primary {
-  color: #4cc4ce;
-}
-
-/* line 8, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss */
-a.text-primary:hover {
-  color: #32abb5;
-}
-
-/* line 5, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss */
-.text-success {
-  color: #54997f;
-}
-
-/* line 8, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss */
-a.text-success:hover {
-  color: #427864;
-}
-
-/* line 5, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss */
-.text-info {
-  color: #525f66;
-}
-
-/* line 8, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss */
-a.text-info:hover {
-  color: #3b454a;
-}
-
-/* line 5, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss */
-.text-warning {
-  color: #8a6d3b;
-}
-
-/* line 8, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss */
-a.text-warning:hover {
-  color: #66512c;
-}
-
-/* line 5, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss */
-.text-danger {
-  color: #a94442;
-}
-
-/* line 8, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_text-emphasis.scss */
-a.text-danger:hover {
-  color: #843534;
-}
-
-/* line 114, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_type.scss */
-.bg-primary {
-  color: #fff;
-}
-
-/* line 5, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_background-variant.scss */
-.bg-primary {
-  background-color: #4cc4ce;
-}
-
-/* line 8, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_background-variant.scss */
-a.bg-primary:hover {
-  background-color: #32abb5;
-}
-
-/* line 5, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_background-variant.scss */
-.bg-success {
-  background-color: #ccffde;
-}
-
-/* line 8, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_background-variant.scss */
-a.bg-success:hover {
-  background-color: #99ffbd;
-}
-
-/* line 5, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_background-variant.scss */
-.bg-info {
-  background-color: #f0f0f6;
-}
-
-/* line 8, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_background-variant.scss */
-a.bg-info:hover {
-  background-color: #d0d0e3;
-}
-
-/* line 5, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_background-variant.scss */
-.bg-warning {
-  background-color: #fcf8e3;
-}
-
-/* line 8, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_background-variant.scss */
-a.bg-warning:hover {
-  background-color: #f7ecb5;
-}
-
-/* line 5, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_background-variant.scss */
-.bg-danger {
-  background-color: #f2dede;
-}
-
-/* line 8, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_background-variant.scss */
-a.bg-danger:hover {
-  background-color: #e4b9b9;
-}
-
-/* line 133, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_type.scss */
-.page-header {
-  padding-bottom: 10px;
-  margin: 44px 0 22px;
-  border-bottom: 1px solid #eeeeee;
-}
-
-/* line 145, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_type.scss */
-ul,
-ol {
-  margin-top: 0;
-  margin-bottom: 11px;
-}
-/* line 149, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_type.scss */
-ul ul,
-ul ol,
-ol ul,
-ol ol {
-  margin-bottom: 0;
-}
-
-/* line 157, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_type.scss */
-.list-unstyled, .list-inline {
-  padding-left: 0;
-  list-style: none;
-}
-
-/* line 163, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_type.scss */
-.list-inline {
-  margin-left: -5px;
-}
-/* line 167, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_type.scss */
-.list-inline > li {
-  display: inline-block;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-/* line 175, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_type.scss */
-dl {
-  margin-top: 0;
-  margin-bottom: 22px;
-}
-
-/* line 180, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_type.scss */
-dt,
-dd {
-  line-height: 1.42857;
-}
-
-/* line 183, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_type.scss */
-dt {
-  font-weight: bold;
-}
-
-/* line 186, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_type.scss */
-dd {
-  margin-left: 0;
-}
-
-/* line 15, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
-.dl-horizontal dd:before, .dl-horizontal dd:after {
-  content: " ";
-  display: table;
-}
-/* line 19, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
-.dl-horizontal dd:after {
-  clear: both;
-}
-@media (min-width: 768px) {
-  /* line 201, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_type.scss */
-  .dl-horizontal dt {
-    float: left;
-    width: 160px;
-    clear: left;
-    text-align: right;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-  /* line 208, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_type.scss */
-  .dl-horizontal dd {
-    margin-left: 180px;
-  }
-}
-
-/* line 221, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_type.scss */
-abbr[title],
-abbr[data-original-title] {
-  cursor: help;
-  border-bottom: 1px dotted #999999;
-}
-
-/* line 225, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_type.scss */
-.initialism {
-  font-size: 90%;
-  text-transform: uppercase;
-}
-
-/* line 231, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_type.scss */
-blockquote {
-  padding: 11px 22px;
-  margin: 0 0 22px;
-  font-size: 20px;
-  border-left: 5px solid #eeeeee;
-}
-/* line 240, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_type.scss */
-blockquote p:last-child,
-blockquote ul:last-child,
-blockquote ol:last-child {
-  margin-bottom: 0;
-}
-/* line 249, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_type.scss */
-blockquote footer,
-blockquote small,
-blockquote .small {
-  display: block;
-  font-size: 80%;
-  line-height: 1.42857;
-  color: #999999;
-}
-/* line 255, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_type.scss */
-blockquote footer:before,
-blockquote small:before,
-blockquote .small:before {
-  content: '\2014 \00A0';
-}
-
-/* line 265, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_type.scss */
-.blockquote-reverse,
-blockquote.pull-right {
-  padding-right: 15px;
-  padding-left: 0;
-  border-right: 5px solid #eeeeee;
-  border-left: 0;
-  text-align: right;
-}
-/* line 276, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_type.scss */
-.blockquote-reverse footer:before,
-.blockquote-reverse small:before,
-.blockquote-reverse .small:before,
-blockquote.pull-right footer:before,
-blockquote.pull-right small:before,
-blockquote.pull-right .small:before {
-  content: '';
-}
-/* line 277, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_type.scss */
-.blockquote-reverse footer:after,
-.blockquote-reverse small:after,
-.blockquote-reverse .small:after,
-blockquote.pull-right footer:after,
-blockquote.pull-right small:after,
-blockquote.pull-right .small:after {
-  content: '\00A0 \2014';
-}
-
-/* line 285, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_type.scss */
-blockquote:before,
-blockquote:after {
-  content: "";
-}
-
-/* line 290, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_type.scss */
-address {
-  margin-bottom: 22px;
-  font-style: normal;
-  line-height: 1.42857;
-}
-
-/* line 10, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_code.scss */
-code,
-kbd,
-pre,
-samp {
-  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
-}
-
-/* line 15, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_code.scss */
-code {
-  padding: 2px 4px;
-  font-size: 90%;
-  color: #c7254e;
-  background-color: #f9f2f4;
-  border-radius: 4px;
-}
-
-/* line 24, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_code.scss */
-kbd {
-  padding: 2px 4px;
-  font-size: 90%;
-  color: white;
-  background-color: #333333;
-  border-radius: 3px;
-  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25);
-}
-
-/* line 34, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_code.scss */
-pre {
-  display: block;
-  padding: 10.5px;
-  margin: 0 0 11px;
-  font-size: 15px;
-  line-height: 1.42857;
-  word-break: break-all;
-  word-wrap: break-word;
-  color: #333333;
-  background-color: whitesmoke;
-  border: 1px solid #cccccc;
-  border-radius: 4px;
-}
-/* line 48, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_code.scss */
-pre code {
-  padding: 0;
-  font-size: inherit;
-  color: inherit;
-  white-space: pre-wrap;
-  background-color: transparent;
-  border-radius: 0;
-}
-
-/* line 59, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_code.scss */
-.pre-scrollable {
-  max-height: 340px;
-  overflow-y: scroll;
-}
-
-/* line 9, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_alerts.scss */
-.alert {
-  padding: 15px;
-  margin-bottom: 22px;
-  border: 1px solid transparent;
-  border-radius: 4px;
-}
-/* line 16, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_alerts.scss */
-.alert h4 {
-  margin-top: 0;
-  color: inherit;
-}
-/* line 22, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_alerts.scss */
-.alert .alert-link {
-  font-weight: bold;
-}
-/* line 28, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_alerts.scss */
-.alert > p,
-.alert > ul {
-  margin-bottom: 0;
-}
-/* line 31, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_alerts.scss */
-.alert > p + p {
-  margin-top: 5px;
-}
-
-/* line 40, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_alerts.scss */
-.alert-dismissable {
-  padding-right: 35px;
-}
-/* line 44, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_alerts.scss */
-.alert-dismissable .close {
-  position: relative;
-  top: -2px;
-  right: -21px;
-  color: inherit;
-}
-
-/* line 56, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_alerts.scss */
-.alert-success {
-  background-color: #ccffde;
-  border-color: #b3ffc1;
-  color: #54997f;
-}
-/* line 8, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_alerts.scss */
-.alert-success hr {
-  border-top-color: #99ffac;
-}
-/* line 11, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_alerts.scss */
-.alert-success .alert-link {
-  color: #427864;
-}
-
-/* line 59, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_alerts.scss */
-.alert-info {
-  background-color: #f0f0f6;
-  border-color: #dadce9;
-  color: #525f66;
-}
-/* line 8, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_alerts.scss */
-.alert-info hr {
-  border-top-color: #cacddf;
-}
-/* line 11, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_alerts.scss */
-.alert-info .alert-link {
-  color: #3b454a;
-}
-
-/* line 62, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_alerts.scss */
-.alert-warning {
-  background-color: #fcf8e3;
-  border-color: #faebcc;
-  color: #8a6d3b;
-}
-/* line 8, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_alerts.scss */
-.alert-warning hr {
-  border-top-color: #f7e1b5;
-}
-/* line 11, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_alerts.scss */
-.alert-warning .alert-link {
-  color: #66512c;
-}
-
-/* line 65, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_alerts.scss */
-.alert-danger {
-  background-color: #f2dede;
-  border-color: #ebccd1;
-  color: #a94442;
-}
-/* line 8, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_alerts.scss */
-.alert-danger hr {
-  border-top-color: #e4b9c0;
-}
-/* line 11, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_alerts.scss */
-.alert-danger .alert-link {
-  color: #843534;
-}
-
-/* line 7, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_wells.scss */
-.well {
-  min-height: 20px;
-  padding: 19px;
-  margin-bottom: 20px;
-  background-color: whitesmoke;
-  border: 1px solid #e3e3e3;
-  border-radius: 4px;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-}
-/* line 15, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_wells.scss */
-.well blockquote {
-  border-color: #ddd;
-  border-color: rgba(0, 0, 0, 0.15);
-}
-
-/* line 22, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_wells.scss */
-.well-lg {
-  padding: 24px;
-  border-radius: 6px;
-}
-
-/* line 26, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_wells.scss */
-.well-sm {
-  padding: 9px;
-  border-radius: 3px;
-}
-
-/* line 6, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_breadcrumbs.scss */
-.breadcrumb {
-  padding: 8px 15px;
-  margin-bottom: 22px;
-  list-style: none;
-  background-color: whitesmoke;
-  border-radius: 4px;
-}
-/* line 13, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_breadcrumbs.scss */
-.breadcrumb > li {
-  display: inline-block;
-}
-/* line 16, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_breadcrumbs.scss */
-.breadcrumb > li + li:before {
-  content: "/\00a0";
-  padding: 0 5px;
-  color: #cccccc;
-}
-/* line 23, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_breadcrumbs.scss */
-.breadcrumb > .active {
-  color: #999999;
-}
-
-/* line 10, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_forms.scss */
-fieldset {
-  padding: 0;
-  margin: 0;
-  border: 0;
-  min-width: 0;
-}
-
-/* line 20, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_forms.scss */
-legend {
-  display: block;
-  width: 100%;
-  padding: 0;
-  margin-bottom: 22px;
-  font-size: 24px;
-  line-height: inherit;
-  color: #333333;
-  border: 0;
-  border-bottom: 1px solid #e5e5e5;
-}
-
-/* line 32, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_forms.scss */
-label {
-  display: inline-block;
-  max-width: 100%;
-  margin-bottom: 5px;
-  font-weight: bold;
-}
-
-/* line 47, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_forms.scss */
-input[type="search"] {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-/* line 53, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_forms.scss */
-input[type="radio"],
-input[type="checkbox"] {
-  margin: 4px 0 0;
-  margin-top: 1px \9;
-  line-height: normal;
-}
-
-/* line 60, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_forms.scss */
-input[type="file"] {
-  display: block;
-}
-
-/* line 65, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_forms.scss */
-input[type="range"] {
-  display: block;
-  width: 100%;
-}
-
-/* line 72, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_forms.scss */
-select[multiple],
-select[size] {
-  height: auto;
-}
-
-/* line 79, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_forms.scss */
-input[type="file"]:focus,
-input[type="radio"]:focus,
-input[type="checkbox"]:focus {
-  outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
-}
-
-/* line 84, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_forms.scss */
-output {
-  display: block;
-  padding-top: 7px;
-  font-size: 16px;
-  line-height: 1.42857;
-  color: #555555;
-}
-
-/* line 115, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_forms.scss */
-.form-control {
-  display: block;
-  width: 100%;
-  height: 36px;
-  padding: 6px 12px;
-  font-size: 16px;
-  line-height: 1.42857;
-  color: #555555;
-  background-color: white;
-  background-image: none;
-  border: 1px solid #cccccc;
-  border-radius: 4px;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
-  -moz-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
-  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
-}
-/* line 53, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_forms.scss */
-.form-control:focus {
-  border-color: #66afe9;
-  outline: 0;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
-}
-/* line 143, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_forms.scss */
-.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
-  cursor: not-allowed;
-  background-color: #eeeeee;
-  opacity: 1;
-}
-
-/* line 153, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_forms.scss */
-textarea.form-control {
-  height: auto;
-}
-
-/* line 165, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_forms.scss */
-input[type="search"] {
-  -webkit-appearance: none;
-}
-
-/* line 179, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_forms.scss */
-input[type="date"],
-input[type="time"],
-input[type="datetime-local"],
-input[type="month"] {
-  line-height: 36px;
-  line-height: 1.42857 \0;
-}
-/* line 184, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_forms.scss */
-input[type="date"].input-sm,
-input[type="time"].input-sm,
-input[type="datetime-local"].input-sm,
-input[type="month"].input-sm {
-  line-height: 33px;
-}
-/* line 187, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_forms.scss */
-input[type="date"].input-lg,
-input[type="time"].input-lg,
-input[type="datetime-local"].input-lg,
-input[type="month"].input-lg {
-  line-height: 49px;
-}
-
-/* line 198, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_forms.scss */
-.form-group {
-  margin-bottom: 15px;
-}
-
-/* line 208, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_forms.scss */
-.radio,
-.checkbox {
-  display: block;
-  min-height: 22px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-/* line 214, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_forms.scss */
-.radio label,
-.checkbox label {
-  padding-left: 20px;
-  margin-bottom: 0;
-  font-weight: normal;
-  cursor: pointer;
-}
-
-/* line 224, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_forms.scss */
-.radio input[type="radio"],
-.radio-inline input[type="radio"],
-.checkbox input[type="checkbox"],
-.checkbox-inline input[type="checkbox"] {
-  float: left;
-  margin-left: -20px;
-}
-
-/* line 229, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_forms.scss */
-.radio + .radio,
-.checkbox + .checkbox {
-  margin-top: -5px;
-}
-
-/* line 235, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_forms.scss */
-.radio-inline,
-.checkbox-inline {
-  display: inline-block;
-  padding-left: 20px;
-  margin-bottom: 0;
-  vertical-align: middle;
-  font-weight: normal;
-  cursor: pointer;
-}
-
-/* line 244, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_forms.scss */
-.radio-inline + .radio-inline,
-.checkbox-inline + .checkbox-inline {
-  margin-top: 0;
-  margin-left: 10px;
-}
-
-/* line 259, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_forms.scss */
-input[type="radio"][disabled], fieldset[disabled] input[type="radio"],
-input[type="checkbox"][disabled], fieldset[disabled]
-input[type="checkbox"],
-.radio[disabled], fieldset[disabled]
-.radio,
-.radio-inline[disabled], fieldset[disabled]
-.radio-inline,
-.checkbox[disabled], fieldset[disabled]
-.checkbox,
-.checkbox-inline[disabled], fieldset[disabled]
-.checkbox-inline {
-  cursor: not-allowed;
-}
-
-/* line 67, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_forms.scss */
-.input-sm {
-  height: 33px;
-  padding: 5px 10px;
-  font-size: 14px;
-  line-height: 1.5;
-  border-radius: 3px;
-}
-
-/* line 75, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_forms.scss */
-select.input-sm {
-  height: 33px;
-  line-height: 33px;
-}
-
-/* line 81, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_forms.scss */
-textarea.input-sm,
-select[multiple].input-sm {
-  height: auto;
-}
-
-/* line 67, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_forms.scss */
-.input-lg {
-  height: 49px;
-  padding: 10px 16px;
-  font-size: 20px;
-  line-height: 1.33;
-  border-radius: 6px;
-}
-
-/* line 75, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_forms.scss */
-select.input-lg {
-  height: 49px;
-  line-height: 49px;
-}
-
-/* line 81, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_forms.scss */
-textarea.input-lg,
-select[multiple].input-lg {
-  height: auto;
-}
-
-/* line 279, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_forms.scss */
-.has-feedback {
-  position: relative;
-}
-/* line 284, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_forms.scss */
-.has-feedback .form-control {
-  padding-right: 45px;
-}
-
-/* line 289, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_forms.scss */
-.form-control-feedback {
-  position: absolute;
-  top: 27px;
-  right: 0;
-  z-index: 2;
-  display: block;
-  width: 36px;
-  height: 36px;
-  line-height: 36px;
-  text-align: center;
-}
-
-/* line 300, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_forms.scss */
-.input-lg + .form-control-feedback {
-  width: 49px;
-  height: 49px;
-  line-height: 49px;
-}
-
-/* line 305, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_forms.scss */
-.input-sm + .form-control-feedback {
-  width: 33px;
-  height: 33px;
-  line-height: 33px;
-}
-
-/* line 13, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_forms.scss */
-.has-success .help-block,
-.has-success .control-label,
-.has-success .radio,
-.has-success .checkbox,
-.has-success .radio-inline,
-.has-success .checkbox-inline {
-  color: #54997f;
-}
-/* line 17, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_forms.scss */
-.has-success .form-control {
-  border-color: #54997f;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-}
-/* line 20, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_forms.scss */
-.has-success .form-control:focus {
-  border-color: #427864;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #91c2b0;
-}
-/* line 27, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_forms.scss */
-.has-success .input-group-addon {
-  color: #54997f;
-  border-color: #54997f;
-  background-color: #ccffde;
-}
-/* line 33, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_forms.scss */
-.has-success .form-control-feedback {
-  color: #54997f;
-}
-
-/* line 13, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_forms.scss */
-.has-warning .help-block,
-.has-warning .control-label,
-.has-warning .radio,
-.has-warning .checkbox,
-.has-warning .radio-inline,
-.has-warning .checkbox-inline {
-  color: #8a6d3b;
-}
-/* line 17, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_forms.scss */
-.has-warning .form-control {
-  border-color: #8a6d3b;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-}
-/* line 20, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_forms.scss */
-.has-warning .form-control:focus {
-  border-color: #66512c;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b;
-}
-/* line 27, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_forms.scss */
-.has-warning .input-group-addon {
-  color: #8a6d3b;
-  border-color: #8a6d3b;
-  background-color: #fcf8e3;
-}
-/* line 33, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_forms.scss */
-.has-warning .form-control-feedback {
-  color: #8a6d3b;
-}
-
-/* line 13, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_forms.scss */
-.has-error .help-block,
-.has-error .control-label,
-.has-error .radio,
-.has-error .checkbox,
-.has-error .radio-inline,
-.has-error .checkbox-inline {
-  color: #a94442;
-}
-/* line 17, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_forms.scss */
-.has-error .form-control {
-  border-color: #a94442;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-}
-/* line 20, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_forms.scss */
-.has-error .form-control:focus {
-  border-color: #843534;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
-}
-/* line 27, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_forms.scss */
-.has-error .input-group-addon {
-  color: #a94442;
-  border-color: #a94442;
-  background-color: #f2dede;
-}
-/* line 33, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_forms.scss */
-.has-error .form-control-feedback {
-  color: #a94442;
-}
-
-/* line 328, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_forms.scss */
-.form-control-static {
-  margin-bottom: 0;
-}
-
-/* line 338, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_forms.scss */
-.help-block {
-  display: block;
-  margin-top: 5px;
-  margin-bottom: 10px;
-  color: #737373;
-}
-
-@media (min-width: 768px) {
-  /* line 363, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_forms.scss */
-  .form-inline .form-group {
-    display: inline-block;
-    margin-bottom: 0;
-    vertical-align: middle;
-  }
-  /* line 370, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_forms.scss */
-  .form-inline .form-control {
-    display: inline-block;
-    width: auto;
-    vertical-align: middle;
-  }
-  /* line 376, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_forms.scss */
-  .form-inline .input-group {
-    display: inline-table;
-    vertical-align: middle;
-  }
-  /* line 382, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_forms.scss */
-  .form-inline .input-group .input-group-addon,
-  .form-inline .input-group .input-group-btn,
-  .form-inline .input-group .form-control {
-    width: auto;
-  }
-  /* line 388, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_forms.scss */
-  .form-inline .input-group > .form-control {
-    width: 100%;
-  }
-  /* line 392, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_forms.scss */
-  .form-inline .control-label {
-    margin-bottom: 0;
-    vertical-align: middle;
-  }
-  /* line 401, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_forms.scss */
-  .form-inline .radio,
-  .form-inline .checkbox {
-    display: inline-block;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
-    vertical-align: middle;
-  }
-  /* line 409, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_forms.scss */
-  .form-inline .radio input[type="radio"],
-  .form-inline .checkbox input[type="checkbox"] {
-    float: none;
-    margin-left: 0;
-  }
-  /* line 418, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_forms.scss */
-  .form-inline .has-feedback .form-control-feedback {
-    top: 0;
-  }
-}
-
-/* line 438, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_forms.scss */
-.form-horizontal .radio,
-.form-horizontal .checkbox,
-.form-horizontal .radio-inline,
-.form-horizontal .checkbox-inline {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 7px;
-}
-/* line 446, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_forms.scss */
-.form-horizontal .radio,
-.form-horizontal .checkbox {
-  min-height: 29px;
-}
-/* line 451, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_forms.scss */
-.form-horizontal .form-group {
-  margin-left: -15px;
-  margin-right: -15px;
-}
-/* line 15, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
-.form-horizontal .form-group:before, .form-horizontal .form-group:after {
-  content: " ";
-  display: table;
-}
-/* line 19, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
-.form-horizontal .form-group:after {
-  clear: both;
-}
-/* line 455, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_forms.scss */
-.form-horizontal .form-control-static {
-  padding-top: 7px;
-  padding-bottom: 7px;
-}
-@media (min-width: 768px) {
-  /* line 463, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_forms.scss */
-  .form-horizontal .control-label {
-    text-align: right;
-    margin-bottom: 0;
-    padding-top: 7px;
-  }
-}
-/* line 474, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_forms.scss */
-.form-horizontal .has-feedback .form-control-feedback {
-  top: 0;
-  right: 15px;
-}
-
-/* line 6, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_tables.scss */
-table {
-  max-width: 100%;
-  background-color: transparent;
-}
-
-/* line 10, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_tables.scss */
-th {
-  text-align: left;
-}
-
-/* line 17, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_tables.scss */
-.table {
-  width: 100%;
-  margin-bottom: 22px;
-}
-/* line 26, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_tables.scss */
-.table > thead > tr > th,
-.table > thead > tr > td,
-.table > tbody > tr > th,
-.table > tbody > tr > td,
-.table > tfoot > tr > th,
-.table > tfoot > tr > td {
-  padding: 8px;
-  line-height: 1.42857;
-  vertical-align: top;
-  border-top: 1px solid #dddddd;
-}
-/* line 35, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_tables.scss */
-.table > thead > tr > th {
-  vertical-align: bottom;
-  border-bottom: 2px solid #dddddd;
-}
-/* line 45, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_tables.scss */
-.table > caption + thead > tr:first-child > th,
-.table > caption + thead > tr:first-child > td,
-.table > colgroup + thead > tr:first-child > th,
-.table > colgroup + thead > tr:first-child > td,
-.table > thead:first-child > tr:first-child > th,
-.table > thead:first-child > tr:first-child > td {
-  border-top: 0;
-}
-/* line 51, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_tables.scss */
-.table > tbody + tbody {
-  border-top: 2px solid #dddddd;
-}
-/* line 56, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_tables.scss */
-.table .table {
-  background-color: white;
-}
-
-/* line 70, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_tables.scss */
-.table-condensed > thead > tr > th,
-.table-condensed > thead > tr > td,
-.table-condensed > tbody > tr > th,
-.table-condensed > tbody > tr > td,
-.table-condensed > tfoot > tr > th,
-.table-condensed > tfoot > tr > td {
-  padding: 5px;
-}
-
-/* line 82, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_tables.scss */
-.table-bordered {
-  border: 1px solid #dddddd;
-}
-/* line 89, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_tables.scss */
-.table-bordered > thead > tr > th,
-.table-bordered > thead > tr > td,
-.table-bordered > tbody > tr > th,
-.table-bordered > tbody > tr > td,
-.table-bordered > tfoot > tr > th,
-.table-bordered > tfoot > tr > td {
-  border: 1px solid #dddddd;
-}
-/* line 96, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_tables.scss */
-.table-bordered > thead > tr > th,
-.table-bordered > thead > tr > td {
-  border-bottom-width: 2px;
-}
-
-/* line 110, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_tables.scss */
-.table-striped > tbody > tr:nth-child(odd) > td,
-.table-striped > tbody > tr:nth-child(odd) > th {
-  background-color: #f9f9f9;
-}
-
-/* line 124, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_tables.scss */
-.table-hover > tbody > tr:hover > td,
-.table-hover > tbody > tr:hover > th {
-  background-color: whitesmoke;
-}
-
-/* line 135, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_tables.scss */
-table col[class*="col-"] {
-  position: static;
-  float: none;
-  display: table-column;
-}
-
-/* line 143, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_tables.scss */
-table td[class*="col-"],
-table th[class*="col-"] {
-  position: static;
-  float: none;
-  display: table-cell;
-}
-
-/* line 12, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_table-row.scss */
-.table > thead > tr > td.active,
-.table > thead > tr > th.active, .table > thead > tr.active > td, .table > thead > tr.active > th,
-.table > tbody > tr > td.active,
-.table > tbody > tr > th.active,
-.table > tbody > tr.active > td,
-.table > tbody > tr.active > th,
-.table > tfoot > tr > td.active,
-.table > tfoot > tr > th.active,
-.table > tfoot > tr.active > td,
-.table > tfoot > tr.active > th {
-  background-color: whitesmoke;
-}
-
-/* line 24, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_table-row.scss */
-.table-hover > tbody > tr > td.active:hover,
-.table-hover > tbody > tr > th.active:hover, .table-hover > tbody > tr.active:hover > td, .table-hover > tbody > tr:hover > .active, .table-hover > tbody > tr.active:hover > th {
-  background-color: #e8e8e8;
-}
-
-/* line 12, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_table-row.scss */
-.table > thead > tr > td.success,
-.table > thead > tr > th.success, .table > thead > tr.success > td, .table > thead > tr.success > th,
-.table > tbody > tr > td.success,
-.table > tbody > tr > th.success,
-.table > tbody > tr.success > td,
-.table > tbody > tr.success > th,
-.table > tfoot > tr > td.success,
-.table > tfoot > tr > th.success,
-.table > tfoot > tr.success > td,
-.table > tfoot > tr.success > th {
-  background-color: #ccffde;
-}
-
-/* line 24, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_table-row.scss */
-.table-hover > tbody > tr > td.success:hover,
-.table-hover > tbody > tr > th.success:hover, .table-hover > tbody > tr.success:hover > td, .table-hover > tbody > tr:hover > .success, .table-hover > tbody > tr.success:hover > th {
-  background-color: #b3ffce;
-}
-
-/* line 12, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_table-row.scss */
-.table > thead > tr > td.info,
-.table > thead > tr > th.info, .table > thead > tr.info > td, .table > thead > tr.info > th,
-.table > tbody > tr > td.info,
-.table > tbody > tr > th.info,
-.table > tbody > tr.info > td,
-.table > tbody > tr.info > th,
-.table > tfoot > tr > td.info,
-.table > tfoot > tr > th.info,
-.table > tfoot > tr.info > td,
-.table > tfoot > tr.info > th {
-  background-color: #f0f0f6;
-}
-
-/* line 24, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_table-row.scss */
-.table-hover > tbody > tr > td.info:hover,
-.table-hover > tbody > tr > th.info:hover, .table-hover > tbody > tr.info:hover > td, .table-hover > tbody > tr:hover > .info, .table-hover > tbody > tr.info:hover > th {
-  background-color: #e0e0ec;
-}
-
-/* line 12, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_table-row.scss */
-.table > thead > tr > td.warning,
-.table > thead > tr > th.warning, .table > thead > tr.warning > td, .table > thead > tr.warning > th,
-.table > tbody > tr > td.warning,
-.table > tbody > tr > th.warning,
-.table > tbody > tr.warning > td,
-.table > tbody > tr.warning > th,
-.table > tfoot > tr > td.warning,
-.table > tfoot > tr > th.warning,
-.table > tfoot > tr.warning > td,
-.table > tfoot > tr.warning > th {
-  background-color: #fcf8e3;
-}
-
-/* line 24, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_table-row.scss */
-.table-hover > tbody > tr > td.warning:hover,
-.table-hover > tbody > tr > th.warning:hover, .table-hover > tbody > tr.warning:hover > td, .table-hover > tbody > tr:hover > .warning, .table-hover > tbody > tr.warning:hover > th {
-  background-color: #faf2cc;
-}
-
-/* line 12, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_table-row.scss */
-.table > thead > tr > td.danger,
-.table > thead > tr > th.danger, .table > thead > tr.danger > td, .table > thead > tr.danger > th,
-.table > tbody > tr > td.danger,
-.table > tbody > tr > th.danger,
-.table > tbody > tr.danger > td,
-.table > tbody > tr.danger > th,
-.table > tfoot > tr > td.danger,
-.table > tfoot > tr > th.danger,
-.table > tfoot > tr.danger > td,
-.table > tfoot > tr.danger > th {
-  background-color: #f2dede;
-}
-
-/* line 24, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_table-row.scss */
-.table-hover > tbody > tr > td.danger:hover,
-.table-hover > tbody > tr > th.danger:hover, .table-hover > tbody > tr.danger:hover > td, .table-hover > tbody > tr:hover > .danger, .table-hover > tbody > tr.danger:hover > th {
-  background-color: #ebcccc;
-}
-
-@media screen and (max-width: 767px) {
-  /* line 171, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_tables.scss */
-  .table-responsive {
-    width: 100%;
-    margin-bottom: 16.5px;
-    overflow-y: hidden;
-    overflow-x: scroll;
-    -ms-overflow-style: -ms-autohiding-scrollbar;
-    border: 1px solid #dddddd;
-    -webkit-overflow-scrolling: touch;
-  }
-  /* line 182, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_tables.scss */
-  .table-responsive > .table {
-    margin-bottom: 0;
-  }
-  /* line 191, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_tables.scss */
-  .table-responsive > .table > thead > tr > th,
-  .table-responsive > .table > thead > tr > td,
-  .table-responsive > .table > tbody > tr > th,
-  .table-responsive > .table > tbody > tr > td,
-  .table-responsive > .table > tfoot > tr > th,
-  .table-responsive > .table > tfoot > tr > td {
-    white-space: nowrap;
-  }
-  /* line 199, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_tables.scss */
-  .table-responsive > .table-bordered {
-    border: 0;
-  }
-  /* line 208, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_tables.scss */
-  .table-responsive > .table-bordered > thead > tr > th:first-child,
-  .table-responsive > .table-bordered > thead > tr > td:first-child,
-  .table-responsive > .table-bordered > tbody > tr > th:first-child,
-  .table-responsive > .table-bordered > tbody > tr > td:first-child,
-  .table-responsive > .table-bordered > tfoot > tr > th:first-child,
-  .table-responsive > .table-bordered > tfoot > tr > td:first-child {
-    border-left: 0;
-  }
-  /* line 212, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_tables.scss */
-  .table-responsive > .table-bordered > thead > tr > th:last-child,
-  .table-responsive > .table-bordered > thead > tr > td:last-child,
-  .table-responsive > .table-bordered > tbody > tr > th:last-child,
-  .table-responsive > .table-bordered > tbody > tr > td:last-child,
-  .table-responsive > .table-bordered > tfoot > tr > th:last-child,
-  .table-responsive > .table-bordered > tfoot > tr > td:last-child {
-    border-right: 0;
-  }
-  /* line 225, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_tables.scss */
-  .table-responsive > .table-bordered > tbody > tr:last-child > th,
-  .table-responsive > .table-bordered > tbody > tr:last-child > td,
-  .table-responsive > .table-bordered > tfoot > tr:last-child > th,
-  .table-responsive > .table-bordered > tfoot > tr:last-child > td {
-    border-bottom: 0;
-  }
-}
-
-@font-face {
-  font-family: "Roboto";
-  font-weight: normal;
-  font-style: normal;
-  src: url("../fonts/roboto/roboto-regular-webfont.eot");
-  src: url("../fonts/roboto/roboto-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/roboto-regular-webfont.woff") format("woff"), url("../fonts/roboto/roboto-regular-webfont.ttf") format("truetype"), url("../fonts/roboto/roboto-regular-webfont.svg#Roboto") format("svg");
-}
-
-@font-face {
-  font-family: "Roboto";
-  font-weight: bold;
-  font-style: normal;
-  src: url("../fonts/roboto/roboto-bold-webfont.eot");
-  src: url("../fonts/roboto/roboto-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/roboto-bold-webfont.woff") format("woff"), url("../fonts/roboto/roboto-bold-webfont.ttf") format("truetype"), url("../fonts/roboto/roboto-bold-webfont.svg#Roboto") format("svg");
-}
-
-@font-face {
-  font-family: "Roboto";
-  font-weight: normal;
-  font-style: italic;
-  src: url("../fonts/roboto/roboto-italic-webfont.eot");
-  src: url("../fonts/roboto/roboto-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/roboto-italic-webfont.woff") format("woff"), url("../fonts/roboto/roboto-italic-webfont.ttf") format("truetype"), url("../fonts/roboto/roboto-italic-webfont.svg#Roboto") format("svg");
-}
-
-@font-face {
-  font-family: "Roboto Slab";
-  font-weight: normal;
-  font-style: normal;
-  src: url("../fonts/roboto-slab/robotoslab-regular-webfont.eot");
-  src: url("../fonts/roboto-slab/robotoslab-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab/robotoslab-regular-webfont.woff") format("woff"), url("../fonts/roboto-slab/robotoslab-regular-webfont.ttf") format("truetype"), url("../fonts/roboto-slab/robotoslab-regular-webfont.svg#Roboto Slab") format("svg");
-}
-
-@font-face {
-  font-family: "Roboto Slab";
-  font-weight: 300;
-  font-style: normal;
-  src: url("../fonts/roboto-slab/robotoslab-light-webfont.eot");
-  src: url("../fonts/roboto-slab/robotoslab-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab/robotoslab-light-webfont.woff") format("woff"), url("../fonts/roboto-slab/robotoslab-light-webfont.ttf") format("truetype"), url("../fonts/roboto-slab/robotoslab-light-webfont.svg#Roboto Slab") format("svg");
-}
-
-@font-face {
-  font-family: "Roboto Slab";
-  font-weight: bold;
-  font-style: normal;
-  src: url("../fonts/roboto-slab/robotoslab-bold-webfont.eot");
-  src: url("../fonts/roboto-slab/robotoslab-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab/robotoslab-bold-webfont.woff") format("woff"), url("../fonts/roboto-slab/robotoslab-bold-webfont.ttf") format("truetype"), url("../fonts/roboto-slab/robotoslab-bold-webfont.svg#Roboto Slab") format("svg");
-}
-
-/* line 1, ../sass/partials/_furniture.scss */
-.container {
-  margin: 5%;
-}
-
-/* line 6, ../sass/partials/_furniture.scss */
-.btn {
-  background-color: #4cc4ce;
-  border-radius: 3px;
-  border: none;
-  color: #333333;
-  display: inline-block;
-  font-size: inherit;
-  font-weight: bold;
-  padding: 7px 18px;
-  text-decoration: none;
-  background-clip: padding-box;
-  color: #dcf4f5;
-}
-/* line 352, ../../bower_components/bourbon/dist/addons/_button.scss */
-.btn:hover:not(:disabled) {
-  background-color: #5cced8;
-  cursor: pointer;
-}
-/* line 364, ../../bower_components/bourbon/dist/addons/_button.scss */
-.btn:active:not(:disabled), .btn:focus:not(:disabled) {
-  background-color: #3db9c3;
-  cursor: pointer;
-}
-/* line 51, ../../bower_components/bourbon/dist/addons/_button.scss */
-.btn:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-}
-/* line 11, ../sass/partials/_furniture.scss */
-.btn:hover:not(:disabled) {
-  color: white;
-  text-decoration: none;
-}
-
-/* line 17, ../sass/partials/_furniture.scss */
-.btn-smooth {
-  background-color: #eeeeee;
-  color: #999999;
-}
-/* line 21, ../sass/partials/_furniture.scss */
-.btn-smooth:hover:not(:disabled) {
-  background-color: #dfdfdf;
-  color: #555555;
-}
-
-/* line 29, ../sass/partials/_furniture.scss */
+/*
+ * Image replacement
+ */
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+/* line 81, ../sass/partials/_lab.scss */
 .swatch {
-  margin: 0 0 1.42857 0;
+  margin: 0 0 1.618em 0;
   padding: 0;
 }
 
-/* line 33, ../sass/partials/_furniture.scss */
+/* line 85, ../sass/partials/_lab.scss */
 .swatch-row {
   display: block;
   margin: 0;
   padding: 0;
   width: 200px;
 }
-/* line 15, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
+/* line 14, ../sass/partials/_mixins.scss */
 .swatch-row:before, .swatch-row:after {
   content: " ";
   display: table;
 }
-/* line 19, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/mixins/_clearfix.scss */
+/* line 18, ../sass/partials/_mixins.scss */
 .swatch-row:after {
   clear: both;
 }
 
-/* line 40, ../sass/partials/_furniture.scss */
+/* line 92, ../sass/partials/_lab.scss */
 .swatch-row-one {
   background-color: black;
 }
 
-/* line 43, ../sass/partials/_furniture.scss */
+/* line 95, ../sass/partials/_lab.scss */
 .swatch-row-two {
   background-color: white;
 }
 
-/* line 46, ../sass/partials/_furniture.scss */
+/* line 98, ../sass/partials/_lab.scss */
 .swatch-row span {
   display: block;
   float: left;
@@ -2101,249 +123,348 @@ table th[class*="col-"] {
   height: 50px;
 }
 
-/* line 54, ../sass/partials/_furniture.scss */
+/* line 106, ../sass/partials/_lab.scss */
 .swatch-base span:nth-child(1) {
-  background-color: rgba(76, 196, 206, 0.9);
+  background-color: rgba(204, 36, 53, 0.9);
 }
 
-/* line 57, ../sass/partials/_furniture.scss */
+/* line 109, ../sass/partials/_lab.scss */
 .swatch-base span:nth-child(2) {
-  background-color: rgba(76, 196, 206, 0.8);
+  background-color: rgba(204, 36, 53, 0.8);
 }
 
-/* line 60, ../sass/partials/_furniture.scss */
+/* line 112, ../sass/partials/_lab.scss */
 .swatch-base span:nth-child(3) {
-  background-color: rgba(76, 196, 206, 0.7);
+  background-color: rgba(204, 36, 53, 0.7);
 }
 
-/* line 63, ../sass/partials/_furniture.scss */
+/* line 115, ../sass/partials/_lab.scss */
 .swatch-base span:nth-child(4) {
-  background-color: rgba(76, 196, 206, 0.6);
+  background-color: rgba(204, 36, 53, 0.6);
 }
 
-/* line 68, ../sass/partials/_furniture.scss */
+/* line 120, ../sass/partials/_lab.scss */
 .swatch-secondary span:nth-child(1) {
-  background-color: rgba(236, 26, 36, 0.9);
+  background-color: rgba(12, 106, 153, 0.9);
 }
 
-/* line 71, ../sass/partials/_furniture.scss */
+/* line 123, ../sass/partials/_lab.scss */
 .swatch-secondary span:nth-child(2) {
-  background-color: rgba(236, 26, 36, 0.8);
+  background-color: rgba(12, 106, 153, 0.8);
 }
 
-/* line 74, ../sass/partials/_furniture.scss */
+/* line 126, ../sass/partials/_lab.scss */
 .swatch-secondary span:nth-child(3) {
-  background-color: rgba(236, 26, 36, 0.7);
+  background-color: rgba(12, 106, 153, 0.7);
 }
 
-/* line 77, ../sass/partials/_furniture.scss */
+/* line 129, ../sass/partials/_lab.scss */
 .swatch-secondary span:nth-child(4) {
-  background-color: rgba(236, 26, 36, 0.6);
+  background-color: rgba(12, 106, 153, 0.6);
 }
 
-/* line 82, ../sass/partials/_furniture.scss */
+/* line 134, ../sass/partials/_lab.scss */
 .swatch-tertiary span:nth-child(1) {
-  background-color: rgba(255, 170, 0, 0.9);
+  background-color: rgba(212, 207, 36, 0.9);
 }
 
-/* line 85, ../sass/partials/_furniture.scss */
+/* line 137, ../sass/partials/_lab.scss */
 .swatch-tertiary span:nth-child(2) {
-  background-color: rgba(255, 170, 0, 0.8);
+  background-color: rgba(212, 207, 36, 0.8);
 }
 
-/* line 88, ../sass/partials/_furniture.scss */
+/* line 140, ../sass/partials/_lab.scss */
 .swatch-tertiary span:nth-child(3) {
-  background-color: rgba(255, 170, 0, 0.7);
+  background-color: rgba(212, 207, 36, 0.7);
 }
 
-/* line 91, ../sass/partials/_furniture.scss */
+/* line 143, ../sass/partials/_lab.scss */
 .swatch-tertiary span:nth-child(4) {
-  background-color: rgba(255, 170, 0, 0.6);
+  background-color: rgba(212, 207, 36, 0.6);
 }
 
-/* line 96, ../sass/partials/_furniture.scss */
+/* line 148, ../sass/partials/_lab.scss */
 .swatch-neutral span:nth-child(1) {
-  background-color: rgba(85, 85, 85, 0.9);
+  background-color: rgba(127, 127, 127, 0.9);
 }
 
-/* line 99, ../sass/partials/_furniture.scss */
+/* line 151, ../sass/partials/_lab.scss */
 .swatch-neutral span:nth-child(2) {
-  background-color: rgba(85, 85, 85, 0.8);
+  background-color: rgba(127, 127, 127, 0.8);
 }
 
-/* line 102, ../sass/partials/_furniture.scss */
+/* line 154, ../sass/partials/_lab.scss */
 .swatch-neutral span:nth-child(3) {
-  background-color: rgba(85, 85, 85, 0.7);
+  background-color: rgba(127, 127, 127, 0.7);
 }
 
-/* line 105, ../sass/partials/_furniture.scss */
+/* line 157, ../sass/partials/_lab.scss */
 .swatch-neutral span:nth-child(4) {
-  background-color: rgba(85, 85, 85, 0.6);
+  background-color: rgba(127, 127, 127, 0.6);
 }
 
-/* line 110, ../sass/partials/_furniture.scss */
-.swatch-error span:nth-child(1) {
-  background-color: rgba(217, 83, 79, 0.9);
+/* line 1, ../sass/partials/_main.scss */
+html {
+  background: white;
+  font-size: 62.5%;
+  -webkit-overflow-scrolling: touch;
+  -webkit-tap-highlight-color: #bbbbbb;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
 }
 
-/* line 113, ../sass/partials/_furniture.scss */
-.swatch-error span:nth-child(2) {
-  background-color: rgba(217, 83, 79, 0.8);
+/* line 10, ../sass/partials/_main.scss */
+body {
+  padding: 1.618em 0;
+  font-size: 16px;
+  font-size: 1.6rem;
+  font-family: adelle, Times, "Times New Roman", serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.618em;
+  color: #666666;
 }
 
-/* line 116, ../sass/partials/_furniture.scss */
-.swatch-error span:nth-child(3) {
-  background-color: rgba(217, 83, 79, 0.7);
+/* line 25, ../sass/partials/_main.scss */
+.wrap,
+[role="banner"],
+[role="contentinfo"] {
+  margin: 0 2em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-/* line 119, ../sass/partials/_furniture.scss */
-.swatch-error span:nth-child(4) {
-  background-color: rgba(217, 83, 79, 0.6);
+/* line 35, ../sass/partials/_main.scss */
+.logo {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }
 
-/* line 124, ../sass/partials/_furniture.scss */
-.swatch-info span:nth-child(1) {
-  background-color: rgba(91, 192, 222, 0.9);
+/* line 43, ../sass/partials/_main.scss */
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  text-rendering: optimizelegibility;
+  color: #333333;
+  font-weight: 800;
 }
 
-/* line 127, ../sass/partials/_furniture.scss */
-.swatch-info span:nth-child(2) {
-  background-color: rgba(91, 192, 222, 0.8);
+/* line 49, ../sass/partials/_main.scss */
+h1, .h1 {
+  font-size: 35.596px;
+  font-size: 3.5596rem;
+  line-height: 1.15571em;
+  margin-bottom: 0;
 }
 
-/* line 130, ../sass/partials/_furniture.scss */
-.swatch-info span:nth-child(3) {
-  background-color: rgba(91, 192, 222, 0.7);
+/* line 56, ../sass/partials/_main.scss */
+h2, .h2,
+h3, .h3 {
+  font-size: 22px;
+  font-size: 2.2rem;
+  line-height: 1.34833em;
+  margin-bottom: 0.89889em;
 }
 
-/* line 133, ../sass/partials/_furniture.scss */
-.swatch-info span:nth-child(4) {
-  background-color: rgba(91, 192, 222, 0.6);
+/* line 62, ../sass/partials/_main.scss */
+h3, .h3 {
+  font-weight: 400;
 }
 
-/* line 138, ../sass/partials/_furniture.scss */
-.swatch-success span:nth-child(1) {
-  background-color: rgba(92, 184, 92, 0.9);
+/* line 68, ../sass/partials/_main.scss */
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 1.618em;
+  margin-bottom: 1.618em;
 }
 
-/* line 141, ../sass/partials/_furniture.scss */
-.swatch-success span:nth-child(2) {
-  background-color: rgba(92, 184, 92, 0.8);
+/* line 74, ../sass/partials/_main.scss */
+p.intro {
+  font-size: 22px;
+  font-size: 2.2rem;
+  line-height: 1.34833em;
+  margin: 1.34833em 0;
 }
 
-/* line 144, ../sass/partials/_furniture.scss */
-.swatch-success span:nth-child(3) {
-  background-color: rgba(92, 184, 92, 0.7);
+/* line 80, ../sass/partials/_main.scss */
+p {
+  font-size: 16px;
+  font-size: 1.6rem;
+  margin-bottom: 1.618em;
+  font-weight: 300;
 }
 
-/* line 147, ../sass/partials/_furniture.scss */
-.swatch-success span:nth-child(4) {
-  background-color: rgba(92, 184, 92, 0.6);
+/* line 86, ../sass/partials/_main.scss */
+p.pullquote {
+  padding-left: 11px;
+  border-style: solid;
+  border-left-width: 3px;
+  margin-bottom: 1em;
 }
 
-@media print {
-  /* line 8, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_print.scss */
-  * {
-    text-shadow: none !important;
-    color: #000 !important;
-    background: transparent !important;
-    box-shadow: none !important;
+/* line 93, ../sass/partials/_main.scss */
+p.author {
+  font-size: 11px;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  color: #bbbbbb;
+}
+
+/* line 99, ../sass/partials/_main.scss */
+small {
+  color: #bbbbbb;
+}
+
+/* line 103, ../sass/partials/_main.scss */
+.entry-meta {
+  font-size: 11px;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 2.35345em;
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  padding-left: 2px;
+  line-height: 1.618em;
+}
+/* line 113, ../sass/partials/_main.scss */
+.entry-meta a {
+  color: #bbbbbb;
+}
+/* line 116, ../sass/partials/_main.scss */
+.entry-meta a:hover {
+  color: black;
+}
+
+/* line 125, ../sass/partials/_main.scss */
+a {
+  color: #333333;
+  text-decoration: none;
+}
+/* line 130, ../sass/partials/_main.scss */
+a:hover, a:focus {
+  color: black;
+}
+/* line 134, ../sass/partials/_main.scss */
+a:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+/* line 142, ../sass/partials/_main.scss */
+[role="navigation"] {
+  margin-bottom: 1.618em;
+}
+/* line 145, ../sass/partials/_main.scss */
+[role="navigation"] ul {
+  margin: 0;
+  padding: 0;
+  margin-left: -2%;
+  text-align: center;
+}
+/* line 150, ../sass/partials/_main.scss */
+[role="navigation"] ul li {
+  line-height: 0.89889em;
+  display: inline-block;
+  margin-left: 2%;
+}
+/* line 157, ../sass/partials/_main.scss */
+[role="navigation"] a {
+  font-size: 11px;
+  font-size: 1.1rem;
+  color: #bbbbbb;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+/* line 164, ../sass/partials/_main.scss */
+[role="navigation"] a:hover {
+  color: #000;
+}
+
+/*
+@media screen and (max-width: 900px) {
+	.wrap,
+	[role="banner"],
+	[role="contentinfo"] {
+		margin: 0 auto;
+		width: 100%;
+		padding: 0 2em;
+	}
+
+} 
+
+@media screen and (max-width: 480px) {
+	body {
+		font-size: 90%;
+	}
+
+	h1 {
+		font-size: 3.75em;
+		line-height: 0.929em;
+	}
+
+	p {
+		font-size: 16px;
+	}
+
+	p.pullquote {
+		font-size: 16px;
+	}
+
+} 
+*/
+@media screen and (min-width: 600px) {
+  /* line 212, ../sass/partials/_main.scss */
+  html {
+    padding: 3.236em 0;
+    font-size: 70.3125%;
   }
 
-  /* line 16, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_print.scss */
-  a,
-  a:visited {
-    text-decoration: underline;
+  /* line 217, ../sass/partials/_main.scss */
+  h1, .h1 {
+    font-size: 54px;
+    font-size: 5.4rem;
   }
 
-  /* line 20, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_print.scss */
-  a[href]:after {
-    content: " (" attr(href) ")";
+  /* line 221, ../sass/partials/_main.scss */
+  nav[role="navigation"] {
+    margin-bottom: 3.236em;
+  }
+  /* line 224, ../sass/partials/_main.scss */
+  nav[role="navigation"] ul {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+  /* line 228, ../sass/partials/_main.scss */
+  nav[role="navigation"] ul li {
+    line-height: 0.89889em;
+    display: list-item;
+    margin-left: 0;
   }
 
-  /* line 24, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_print.scss */
-  abbr[title]:after {
-    content: " (" attr(title) ")";
+  /* line 237, ../sass/partials/_main.scss */
+  .entry-meta {
+    border-top-style: none;
   }
-
-  /* line 30, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_print.scss */
-  a[href^="javascript:"]:after,
-  a[href^="#"]:after {
-    content: "";
-  }
-
-  /* line 35, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_print.scss */
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-
-  /* line 40, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_print.scss */
-  thead {
-    display: table-header-group;
-  }
-
-  /* line 45, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_print.scss */
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
-
-  /* line 49, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_print.scss */
-  img {
-    max-width: 100% !important;
-  }
-
-  /* line 55, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_print.scss */
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
-
-  /* line 61, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_print.scss */
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
-
-  /* line 67, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_print.scss */
-  select {
-    background: #fff !important;
-  }
-
-  /* line 72, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_print.scss */
-  .navbar {
-    display: none;
-  }
-
-  /* line 77, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_print.scss */
-  .table td,
-  .table th {
-    background-color: #fff !important;
-  }
-
-  /* line 83, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_print.scss */
-  .btn > .caret,
-  .dropup > .btn > .caret {
-    border-top-color: #000 !important;
-  }
-
-  /* line 87, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_print.scss */
-  .label {
-    border: 1px solid #000;
-  }
-
-  /* line 91, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_print.scss */
-  .table {
-    border-collapse: collapse !important;
-  }
-
-  /* line 96, ../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/_print.scss */
-  .table-bordered th,
-  .table-bordered td {
-    border: 1px solid #ddd !important;
+}
+@media screen and (min-width: 873px) {
+  /* line 247, ../sass/partials/_main.scss */
+  .wrap,
+  [role="banner"],
+  [role="contentinfo"] {
+    margin: 0 auto;
+    max-width: 800px;
   }
 }

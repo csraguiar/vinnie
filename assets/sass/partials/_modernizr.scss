@@ -13,18 +13,6 @@
 /* csstransforms */
 /* csstransforms3d */
 /* csstransitions */
-.csstransitions {
-
-.menu-toggle {
-@include transition (all .3s ease-out);
-}
-
-nav[role="navigation"] {
-@include transition (max-height .3s ease-out);
-}
-
-
-}
 /* draganddrop */
 /* flexbox */
 /* fontface */
