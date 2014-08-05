@@ -24,5 +24,21 @@ $linkcolor-hover:	#000;
 // ==================================================================================================
 // Responsiveness
 
-$breakpoint		:	37.5em;	//	600px
-$maxwidth		: 	800px;
+$bp2			: 	480px;
+$bp3			: 	600px;
+$max-width		:	800px;
+
+// 320
+@include add-grid(2);
+@include add-gutter(1/6.853526);
+
+// 480
+@include add-grid(4 at $bp2);
+
+// 600
+@include add-grid(6 at $bp3);
+@include add-gutter(1/4.235801 at $bp3);
+
+
+@include sgs-change('debug', true);
+@include sgs-change('output', 'isolation');

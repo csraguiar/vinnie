@@ -1,3 +1,8 @@
+// Dev Deps
+@import '../../bower_components/breakpoint-sass/stylesheets/breakpoint';
+@import '../../bower_components/singularity/stylesheets/singularitygs';
+@import '../../bower_components/bourbon/dist/bourbon';
+
 // Reset
 @import 'partials/reset';
 
@@ -5,7 +10,6 @@
 @import 'config';
 
 // Mixins
-@import '../../bower_components/bourbon/dist/bourbon';
 @import 'partials/mixins';
 
 // Main

@@ -1,0 +1,7 @@
+// Change the grid settings
+$grid-columns: 10;
+$max-width: em(800);
+
+// Define your breakpoints
+$up: new-breakpoint(max-width 480px 5);
+$mobile: new-breakpoint(max-width 600px 8);

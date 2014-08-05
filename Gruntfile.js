@@ -2,15 +2,20 @@
 module.exports = function (grunt) {
 
   grunt.initConfig({
-    compass: {
+
+    sass: {
       dist: {
+        files: {
+        'assets/css/vinnie.css': 'assets/sass/vinnie.scss'
+        },
         options: {
-          sassDir: 'assets/sass',
-          cssDir: 'assets/css',
-          outputStyle: 'expanded'
+          precision: 6,
+          style: 'expanded'
         }
       }
     },
+
+
     uglify: {
       dist: {
         files: {
@@ -21,17 +26,20 @@ module.exports = function (grunt) {
         }
       }
     },
+
+
     watch: {
-      compass: {
+      sass: {
         files: [
           'assets/sass/*.scss',
           'assets/sass/partials/**/*.scss'
         ],
-        tasks: ['compass'],
+        tasks: ['sass'],
         options: {
           livereload: true
         }
       },
+
       js: {
         files: [
           'assets/js/custom.js',
@@ -40,6 +48,7 @@ module.exports = function (grunt) {
         ],
         tasks: ['uglify']
       },
+
       markup: {
         files: [
           '**/*.php'
@@ -48,15 +57,18 @@ module.exports = function (grunt) {
           livereload: true
         }
       }
+
     }
+
+
   });
 
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-contrib-compass');
+  grunt.loadNpmTasks('grunt-contrib-sass');
 
   grunt.registerTask('default', [
-    'compass',
+    'sass',
     'uglify'
   ]);
   grunt.registerTask('dev', [

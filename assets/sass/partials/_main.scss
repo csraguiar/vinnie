@@ -8,8 +8,8 @@ html {
 }
 
 body {
-	padding: $baselineheight 0;
 	@include font-size($textsize);
+	margin: 0 2em;
 	font-family: $primaryfont;
 	font-weight: 400;
 	font-style: normal;
@@ -20,13 +20,25 @@ body {
 // ================================================================================================== 
 // Root Layout
 
-.wrap,
+[role="main"],
 [role="banner"],
 [role="contentinfo"] {
-	margin: 0 2em;
+	@include background-grid($color: rgb(230,230,230));
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+}
+
+[role="banner"],
+[role="contentinfo"] {
+	padding: $baselineheight 0;
+}
+
+[role="main"],
+[role="contentinfo"], {
+	*:last-child {
+		margin-bottom: 0;
+	}
 }
 
 // ================================================================================================== 
@@ -140,7 +152,6 @@ a {
 // Navigation
 
 [role="navigation"] {
-margin-bottom: $baselineheight;
 
 	ul {
 		@include zero();
@@ -174,43 +185,9 @@ margin-bottom: $baselineheight;
 // ================================================================================================== 
 // Media Queries
 
-/*
-@media screen and (max-width: 900px) {
-	.wrap,
-	[role="banner"],
-	[role="contentinfo"] {
-		margin: 0 auto;
-		width: 100%;
-		padding: 0 2em;
-	}
-
-} 
-
-@media screen and (max-width: 480px) {
-	body {
-		font-size: 90%;
-	}
-
-	h1 {
-		font-size: 3.75em;
-		line-height: 0.929em;
-	}
-
-	p {
-		font-size: 16px;
-	}
-
-	p.pullquote {
-		font-size: 16px;
-	}
-
-} 
-*/
-
-@media screen and (min-width: 600px) {
+@media screen and (min-width: $bp3) {
 
 	html {
-	padding: $baselineheight *2 0;
 	font-size: 70.3125%; // body font-size: 16px -> 18px; Not quite sure about this method.
 	}
 
@@ -218,8 +195,14 @@ margin-bottom: $baselineheight;
 	@include font-size(54.0);
 	}
 
+	[role="main"],
+	[role="banner"],
+	[role="contentinfo"] {
+	max-width: $max-width;
+	margin: 0 auto;
+	}
+
 	nav[role="navigation"] {
-	margin-bottom: $baselineheight *2;
 
 	ul {
 		@include zero();
@@ -238,15 +221,4 @@ margin-bottom: $baselineheight;
 	border-top-style: none;
 	}
 
-} 
-
-@media screen and (min-width: 873px) {
-
-	.wrap,
-	[role="banner"],
-	[role="contentinfo"] {
-	margin: 0 auto;
-	max-width: $maxwidth;
-	}
-
-} 
+}

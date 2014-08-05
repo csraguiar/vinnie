@@ -34,12 +34,6 @@
 	  wp_enqueue_script('jquery');
 	  wp_enqueue_script('roots_scripts');
 
-	  /*
-	   * Gridsetapp: #DISABLE for production
-	   */
-
-	  wp_register_script('gridsetapp', get_template_directory_uri() . '/assets/js/vendor/gridset-overlay.js', array(), '0.1.0', true);
-	  wp_enqueue_script('gridsetapp');
 	}
 	add_action('wp_enqueue_scripts', 'roots_scripts', 100);
 
