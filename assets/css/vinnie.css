@@ -272,24 +272,9 @@ body {
 [role="main"],
 [role="banner"],
 [role="contentinfo"] {
-  background-image: linear-gradient(to right, #e6e6e6 0%, #e6e6e6 46.60027%, #ececec 46.60027%, #ececec 53.39973%, #e6e6e6 53.39973%, #e6e6e6);
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-}
-@media (min-width: 480px) {
-  [role="main"],
-  [role="banner"],
-  [role="contentinfo"] {
-    background-image: linear-gradient(to right, #e6e6e6 0%, #e6e6e6 22.534039%, #ececec 22.534039%, #ececec 25.821987%, #e6e6e6 25.821987%, #e6e6e6 48.356026%, #ececec 48.356026%, #ececec 51.643974%, #e6e6e6 51.643974%, #e6e6e6 74.178013%, #ececec 74.178013%, #ececec 77.465961%, #e6e6e6 77.465961%, #e6e6e6);
-  }
-}
-@media (min-width: 600px) {
-  [role="main"],
-  [role="banner"],
-  [role="contentinfo"] {
-    background-image: linear-gradient(to right, #e6e6e6 0%, #e6e6e6 13.926773%, #ececec 13.926773%, #ececec 17.214645%, #e6e6e6 17.214645%, #e6e6e6 31.141418%, #ececec 31.141418%, #ececec 34.429291%, #e6e6e6 34.429291%, #e6e6e6 48.356064%, #ececec 48.356064%, #ececec 51.643936%, #e6e6e6 51.643936%, #e6e6e6 65.570709%, #ececec 65.570709%, #ececec 68.858582%, #e6e6e6 68.858582%, #e6e6e6 82.785355%, #ececec 82.785355%, #ececec 86.073227%, #e6e6e6 86.073227%, #e6e6e6);
-  }
 }
 
 [role="banner"],

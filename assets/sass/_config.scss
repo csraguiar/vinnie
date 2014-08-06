@@ -40,5 +40,5 @@ $max-width		:	800px;
 @include add-gutter(1/4.235801 at $bp3);
 
 
-@include sgs-change('debug', true);
+@include sgs-change('debug', false);
 @include sgs-change('output', 'isolation');
