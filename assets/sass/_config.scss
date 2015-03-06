@@ -1,17 +1,18 @@
 // ==================================================================================================
 // Basics
 
-$bodycolor		:	#fff;
+$bodycolor		:	#f6f6f6;
 $textsize		:	16;
+$tweaknumber	:	20;
 $baselineheight	:	1.618em;
 $baselinebase	:	1.618;
 
-$primaryfont	:	adelle, Times, "Times New Roman", serif;
-$secondaryfont	:	"Helvetica Neue", Helvetica, Arial, sans-serif;
+$primaryfont	:	"Freight Text", Times, "Times New Roman", serif;
+$secondaryfont	:	"Brandon Grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 $textcolor		:	#666;
 $headingcolor	:	#333;
-$smallcolor		:	#bbb;
+$smallcolor		:	#999;
 
 $primarycolor	:	rgb(204,36,53);
 $secondarycolor	:	rgb(12,106,153);
@@ -22,11 +23,38 @@ $linkcolor		:	#333;
 $linkcolor-hover:	#000;
 
 // ==================================================================================================
+// Typography Scale
+
+$type-scales: (
+	tiny 		:	golden-ratio(($textsize, $tweaknumber), -2),
+	small 		:	golden-ratio(($textsize, $tweaknumber), -1),
+	base 		:	$textsize, // golden-ratio(($textsize, $tweaknumber), 0),
+	medium 		:	golden-ratio(($textsize, $tweaknumber), 1),
+	large 		:	golden-ratio(($textsize, $tweaknumber), 2),
+	xlarge 		:	golden-ratio(($textsize, $tweaknumber), 3),
+	xxlarge 	:	golden-ratio(($textsize, $tweaknumber), 4),
+	xxxlarge 	:	golden-ratio(($textsize, $tweaknumber), 5),
+	behemoth 	:	golden-ratio(($textsize, $tweaknumber), 6)
+);
+
+// ==================================================================================================
+// Tables
+
+$table-bg						:	transparent;
+$table-cell-padding				:	5px 2px;
+$table-condensed-cell-padding	:	3px 2px;
+$table-border-color 			:	#ddd;
+$table-bg-accent				:	#f6f6f6;
+$table-bg-hover					:	#f6f6f6;
+
+// ==================================================================================================
 // Responsiveness
 
 $bp2			: 	480px;
 $bp3			: 	600px;
-$max-width		:	800px;
+$bp4			: 	768px;
+$bp5			: 	960px;
+$max-width		:	700px;
 
 // 320
 @include add-grid(2);
@@ -38,7 +66,6 @@ $max-width		:	800px;
 // 600
 @include add-grid(6 at $bp3);
 @include add-gutter(1/4.235801 at $bp3);
-
 
 @include sgs-change('debug', false);
 @include sgs-change('output', 'isolation');

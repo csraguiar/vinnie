@@ -1,13 +1,4 @@
-<?php get_template_part('templates/page', 'header'); ?>
-
-<div class="alert alert-warning">
-  <?php _e('Sorry, but the page you were trying to view does not exist.', 'roots'); ?>
+<div class="wrap">
+<h1>404</h1>
+<p class="intro">The page you've requested does not exist. I'm sorry. Perhaps, you could <a href="<?php echo home_url(); ?>">start over</a>.</p>
 </div>
-
-<p><?php _e('It looks like this was the result of either:', 'roots'); ?></p>
-<ul>
-  <li><?php _e('a mistyped address', 'roots'); ?></li>
-  <li><?php _e('an out-of-date link', 'roots'); ?></li>
-</ul>
-
-<?php get_search_form(); ?>

@@ -19,4 +19,3 @@ $journal = new WP_Query( $args ); ?>
 </li>
 <?php wp_link_pages(array('before' => '<nav class="pagination">', 'after' => '</nav>')); endwhile; wp_reset_postdata(); ?>
 </ul>
-

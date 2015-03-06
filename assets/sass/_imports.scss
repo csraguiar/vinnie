@@ -12,9 +12,16 @@
 // Mixins
 @import 'partials/mixins';
 
+// Tables
+@import 'partials/tables';
+
 // Main
+@import 'partials/fonts';
 @import 'partials/lab';
 @import 'partials/main';
 
+// Modernizr
+@import 'partials/modernizr';
+
 // Print
-// @import '../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/print';
+@import '../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap/print';

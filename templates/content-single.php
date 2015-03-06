@@ -1,5 +1,5 @@
 <?php while (have_posts()) : the_post(); $summary = get_post_custom_values('post_summary')[0]; ?>
-
+<div class="wrap">
 <article <?php post_class("h-entry"); ?>>
 
 <header>
@@ -21,5 +21,6 @@
 
 <?php //comments_template('/templates/comments.php'); ?>
 </article>
+</div>
 
 <?php endwhile; ?>

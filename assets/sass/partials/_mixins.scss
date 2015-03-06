@@ -1,13 +1,24 @@
 @mixin font-size($font-size: $textsize) {
-font-size : #{$font-size}px;
-font-size : #{$font-size / 10}rem; }
+  font-size: #{$font-size}px;
+  font-size: #{$font-size / 16}rem; 
+}
 
-@mixin heading-margin($heading-font-size, $baseline-height: $baselinebase, $bodytextsize: $textsize) {
-margin-bottom: #{($bodytextsize * $baseline-height) / $heading-font-size}em; }
+// @mixin heading-margin($heading-font-size, $baseline-height: $baselinebase, $bodytextsize: $textsize) {
+// margin-bottom: #{($bodytextsize * $baseline-height) / $heading-font-size}em; }
+
+@mixin type-scale($scale-name: base) {
+  @include font-size( map-get($type-scales, $scale-name) );
+}
+
+@mixin margin($position, $number-of-baselines, $baseline: $baselinebase, $default-textsize: $textsize) {
+  margin-#{$position}: #{$baseline * $default-textsize * $number-of-baselines}px;
+  margin-#{$position}: #{(($baseline * $default-textsize) / 16) * $number-of-baselines}rem;
+}
 
 @mixin zero {
-margin : 0;
-padding : 0; }
+  margin: 0;
+  padding: 0; 
+}
 
 @mixin clearfix() {
   &:before,
@@ -69,4 +80,10 @@ padding : 0; }
   padding: 0;
   position: absolute;
   width: 1px;
+}
+
+@mixin img-responsive($display: block) {
+  display: $display;
+  max-width: 100%; // Part 1: Set a maximum relative to the parent
+  height: auto; // Part 2: Scale the height according to the width, otherwise you get stretching
 }

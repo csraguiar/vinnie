@@ -7,6 +7,9 @@
 /* canvas */
 /* canvastext */
 /* cssanimations */
+a {
+@include transition (all 0.2s ease-in);
+}
 /* csscolumns */
 /* cssgradients */
 /* cssreflections */

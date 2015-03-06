@@ -1,86 +1,10 @@
-/*
-// ================================================================================================== 
-// Navigation
-// bottom fixed navbar
+// type scales
 
-[role="navigation"] {
-background-color: #333;
-position: fixed;
-bottom: 0;
-width: 100%;
-
-	ul {
-		@include zero();
-		@include clearfix();
-		font-size: 0.667em;
-		text-transform: uppercase;
-
-	li {
-		display: inline-block;
-		width: 12.5%;
-	}
-
-	a {
-		text-align: center;
-		width: 100%;
-		display: block;
-		padding: $baselineheight *1.618 0;
-		color: $smallcolor;
-		&:hover {
-			color: #fff;
-			background-color: #111;
-		}
-	}
-	}
-
+@each $scale, $size in $type-scales {
+    .ts--#{$scale} {
+        content: $size;
+    }
 }
-*/
-
-/*
-
-// ================================================================================================== 
-// Navigation
-// navbar with toggle
-
-[role="navigation"] {
-
-	ul {
-		@include zero();
-		padding-bottom: 40px;
-	}
-}
-
-[role="navigation"] ul a,
-a.nav-toggle {
-	font-size: 0.667em;
-	color: $smallcolor;
-	text-transform: uppercase;
-	line-height: 1.9;
-	font-weight: 300;
-	letter-spacing: 1px;
-
-	&:hover {
-		color: #000;
-	}
-}
-
-a.nav-toggle {
-	padding: 3px 6px;
-	border-radius: 6px;
-	position: relative;
-	top: -12px;
-	left: -3px;
-	border: 1px solid #bbb;
-	line-height: 1;
-	margin-bottom: $baselineheight;
-}
-*/
-
-// neat grid
-
-// div.wrap {
-//   @include outer-container;
-// }
 
 // swatches
 

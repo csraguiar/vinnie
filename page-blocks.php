@@ -1,3 +1,9 @@
+<?php
+/*
+ * Page blocks is where all started; 
+ * Used only for design purposes.
+ */
+?>
 <?php get_template_part('templates/page', 'header'); ?>
 
 <h2>Typography</h2>
