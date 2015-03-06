@@ -10,7 +10,7 @@ module.exports = function (grunt) {
         },
         options: {
           precision: 6,
-          style: 'expanded'
+          style: 'compressed'
         }
       }
     },

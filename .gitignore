@@ -1,7 +1,4 @@
 .sass-cache
 assets/fonts
-assets/css/vinnie.css
-assets/js/scripts.min.js
-assets/sass/partials/_fonts.scss
-vinnie.sublime-workspace
 bower_components
+node_modules
